@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.riot.stream.TS_IO2
+-------------------------------------------------------------------------------
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.726 sec - in org.apache.jena.riot.stream.TS_IO2

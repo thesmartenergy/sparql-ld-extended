@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.sparql.engine.TS_Engine" time="8.693" tests="94" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="bindingStream_01" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_02" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_03" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_04" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_05" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_06" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_10" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_11" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_12" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_20" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_50" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_51" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_52" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_60" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_61" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_62" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="bindingStream_63" classname="org.apache.jena.sparql.engine.binding.TestBindingStreams" time="0"/>
+  <testcase name="table_01" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_02" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_03" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_04" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_05" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_06" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_07" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_08" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_10" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_11" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_12" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_13" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_14" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_15" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_16" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_17" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_18" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_19" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_20" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_21" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_22" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_23" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_24" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="table_25" classname="org.apache.jena.sparql.engine.ref.TestTableJoin" time="0"/>
+  <testcase name="testTopNCloseClosesSource" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0"/>
+  <testcase name="testExhaustionClosesSourceIterator" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0"/>
+  <testcase name="testCancelClosesSourceIterator" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0"/>
+  <testcase name="testCancelInterruptsExternalSortAfterStartingIteration" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0.2"/>
+  <testcase name="testCleanAfterExhaustion" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0.15"/>
+  <testcase name="testCloseClosesSourceIterator" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0.031"/>
+  <testcase name="testCleanAfterClose" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0.111"/>
+  <testcase name="testTopNExhaustionClosesSource" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0.038"/>
+  <testcase name="testCancelInterruptsExternalSortAtStartOfIteration" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0.076"/>
+  <testcase name="testCancelInterruptsInitialisation" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0.014"/>
+  <testcase name="testNoSpill" classname="org.apache.jena.sparql.engine.iterator.TestQueryIterSort" time="0.018"/>
+  <testcase name="distinct0" classname="org.apache.jena.sparql.engine.iterator.TestDistinctMem" time="0"/>
+  <testcase name="distinct1" classname="org.apache.jena.sparql.engine.iterator.TestDistinctMem" time="0"/>
+  <testcase name="distinct2" classname="org.apache.jena.sparql.engine.iterator.TestDistinctMem" time="0"/>
+  <testcase name="distinct3" classname="org.apache.jena.sparql.engine.iterator.TestDistinctMem" time="0.001"/>
+  <testcase name="distinct0" classname="org.apache.jena.sparql.engine.iterator.TestDistinctDataBag" time="0"/>
+  <testcase name="distinct1" classname="org.apache.jena.sparql.engine.iterator.TestDistinctDataBag" time="0"/>
+  <testcase name="distinct2" classname="org.apache.jena.sparql.engine.iterator.TestDistinctDataBag" time="0"/>
+  <testcase name="distinct3" classname="org.apache.jena.sparql.engine.iterator.TestDistinctDataBag" time="0"/>
+  <testcase name="distinct0" classname="org.apache.jena.sparql.engine.iterator.TestDistinctDataBagLimited" time="0"/>
+  <testcase name="distinct1" classname="org.apache.jena.sparql.engine.iterator.TestDistinctDataBagLimited" time="0.002"/>
+  <testcase name="distinct2" classname="org.apache.jena.sparql.engine.iterator.TestDistinctDataBagLimited" time="0"/>
+  <testcase name="distinct3" classname="org.apache.jena.sparql.engine.iterator.TestDistinctDataBagLimited" time="0.003"/>
+  <testcase name="testBaggedCancelPropagates" classname="org.apache.jena.sparql.engine.iterator.TestCancelDistinct" time="0"/>
+  <testcase name="testUnbaggedCancelPropagates" classname="org.apache.jena.sparql.engine.iterator.TestCancelDistinct" time="0"/>
+  <testcase name="testCloseWhenBagPresent" classname="org.apache.jena.sparql.engine.iterator.TestCancelDistinct" time="0"/>
+  <testcase name="testCloseWhenNoBag" classname="org.apache.jena.sparql.engine.iterator.TestCancelDistinct" time="0.001"/>
+  <testcase name="query_service_context_application_01" classname="org.apache.jena.sparql.engine.http.TestService" time="0.022"/>
+  <testcase name="query_service_context_application_02" classname="org.apache.jena.sparql.engine.http.TestService" time="0.3"/>
+  <testcase name="query_service_context_application_03" classname="org.apache.jena.sparql.engine.http.TestService" time="0"/>
+  <testcase name="query_service_context_application_04" classname="org.apache.jena.sparql.engine.http.TestService" time="0"/>
+  <testcase name="query_service_context_application_05" classname="org.apache.jena.sparql.engine.http.TestService" time="0.001"/>
+  <testcase name="update_service_context_application_01" classname="org.apache.jena.sparql.engine.http.TestService" time="0.019"/>
+  <testcase name="update_service_context_application_02" classname="org.apache.jena.sparql.engine.http.TestService" time="0.004"/>
+  <testcase name="testNumericTimeout" classname="org.apache.jena.sparql.engine.http.TestService" time="0.325"/>
+  <testcase name="testStringTimeout2" classname="org.apache.jena.sparql.engine.http.TestService" time="0.016"/>
+  <testcase name="testStringTimeout" classname="org.apache.jena.sparql.engine.http.TestService" time="0.016"/>
+  <testcase name="selectHeader_01" classname="org.apache.jena.sparql.engine.http.TestQueryEngineHTTP" time="0"/>
+  <testcase name="selectHeader_02" classname="org.apache.jena.sparql.engine.http.TestQueryEngineHTTP" time="0"/>
+  <testcase name="selectHeader_03" classname="org.apache.jena.sparql.engine.http.TestQueryEngineHTTP" time="0"/>
+  <testcase name="constructHeader_01" classname="org.apache.jena.sparql.engine.http.TestQueryEngineHTTP" time="0"/>
+  <testcase name="constructHeader_02" classname="org.apache.jena.sparql.engine.http.TestQueryEngineHTTP" time="0"/>
+  <testcase name="constructHeader_03" classname="org.apache.jena.sparql.engine.http.TestQueryEngineHTTP" time="0"/>
+  <testcase name="askHeader_01" classname="org.apache.jena.sparql.engine.http.TestQueryEngineHTTP" time="0"/>
+  <testcase name="askHeader_02" classname="org.apache.jena.sparql.engine.http.TestQueryEngineHTTP" time="0"/>
+  <testcase name="parallel_sparql_construct_default_model_read_lock" classname="org.apache.jena.sparql.engine.TestQueryEngineMultiThreaded" time="1.449"/>
+  <testcase name="parallel_sparql_construct_inference_model_write_lock" classname="org.apache.jena.sparql.engine.TestQueryEngineMultiThreaded" time="2.553"/>
+  <testcase name="parallel_sparql_construct_default_model_write_lock" classname="org.apache.jena.sparql.engine.TestQueryEngineMultiThreaded" time="0.967"/>
+  <testcase name="parallel_sparql_select_inference_model_write_lock" classname="org.apache.jena.sparql.engine.TestQueryEngineMultiThreaded" time="0.326"/>
+  <testcase name="parallel_sparql_select_inference_model_read_lock" classname="org.apache.jena.sparql.engine.TestQueryEngineMultiThreaded" time="0.237"/>
+  <testcase name="parallel_sparql_construct_inference_model_read_lock" classname="org.apache.jena.sparql.engine.TestQueryEngineMultiThreaded" time="1.52"/>
+  <testcase name="parallel_sparql_select_default_model_read_lock" classname="org.apache.jena.sparql.engine.TestQueryEngineMultiThreaded" time="0.128"/>
+  <testcase name="parallel_sparql_select_default_model_write_lock" classname="org.apache.jena.sparql.engine.TestQueryEngineMultiThreaded" time="0.159"/>
+</testsuite>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.sparql.function.user.TS_UserFunctions
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.jena.sparql.function.user.TS_UserFunctions

@@ -1,0 +1,14 @@
+@prefix seas: <https://w3id.org/seas/> .
+@prefix sosa: <http://www.w3c.org/ns/sosa/> .
+@prefix ssn: <http://www.w3c.org/ns/ssn/> .
+@prefix ex: <http://example.org/data/> .
+
+<room/1> a seas:Room , sosa:FeatureOfInterest ;
+  ssn:hasProperty <room/1#temperature>;
+  seas:onFloor 1 .
+
+<room/2> a seas:Room , sosa:FeatureOfInterest ;
+  ssn:hasProperty <room/2#temperature> , <room/2#occupancy> ;
+  seas:onFloor 2 ;
+  ex:endpoint <http://localhost:8001/endpoint_Room2.json> ;
+  ex:liftingrule <http://localhost:8001/liftingrule_Room.rqg> .

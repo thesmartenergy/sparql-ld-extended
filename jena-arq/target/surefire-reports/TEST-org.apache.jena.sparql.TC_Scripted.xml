@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.sparql.TC_Scripted" time="51.271" tests="1032" errors="0" skipped="0" failures="9">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="syntax-basic-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.031"/>
+  <testcase name="syntax-basic-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.028"/>
+  <testcase name="syntax-basic-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.009"/>
+  <testcase name="syntax-basic-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.004"/>
+  <testcase name="syntax-basic-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.023"/>
+  <testcase name="syntax-basic-06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.061"/>
+  <testcase name="syntax-qname-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.002"/>
+  <testcase name="syntax-qname-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-qname-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.006"/>
+  <testcase name="syntax-qname-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.012"/>
+  <testcase name="syntax-qname-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.019"/>
+  <testcase name="syntax-qname-06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.013"/>
+  <testcase name="syntax-qname-07.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.032"/>
+  <testcase name="syntax-qname-08.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.056"/>
+  <testcase name="syntax-lit-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.015"/>
+  <testcase name="syntax-lit-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.03"/>
+  <testcase name="syntax-lit-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.022"/>
+  <testcase name="syntax-lit-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.017"/>
+  <testcase name="syntax-lit-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.006"/>
+  <testcase name="syntax-lit-06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.02"/>
+  <testcase name="syntax-lit-07.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.005"/>
+  <testcase name="syntax-lit-08.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.016"/>
+  <testcase name="syntax-lit-09.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-lit-10.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-lit-11.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-lit-12.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-lit-13.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-lit-14.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-lit-15.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-lit-16.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.002"/>
+  <testcase name="syntax-lit-17.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-lit-18.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-lit-19.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-lit-20.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-struct-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-struct-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-struct-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-struct-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.017"/>
+  <testcase name="syntax-struct-06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-struct-07.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-struct-08.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-struct-09.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-struct-10.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-struct-11.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-struct-12.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-struct-13.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-struct-14.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-lists-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.011"/>
+  <testcase name="syntax-lists-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.061"/>
+  <testcase name="syntax-lists-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.005"/>
+  <testcase name="syntax-lists-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.048"/>
+  <testcase name="syntax-lists-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-lists-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.091"/>
+  <testcase name="syntax-lists-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.014"/>
+  <testcase name="syntax-lists-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.009"/>
+  <testcase name="syntax-lists-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-lists-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.019"/>
+  <testcase name="syntax-bnodes-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.008"/>
+  <testcase name="syntax-bnodes-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.034"/>
+  <testcase name="syntax-bnodes-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.002"/>
+  <testcase name="syntax-bnodes-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.019"/>
+  <testcase name="syntax-bnodes-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-forms-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-forms-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-union-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-union-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.016"/>
+  <testcase name="syntax-expr-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-expr-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.023"/>
+  <testcase name="syntax-expr-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.008"/>
+  <testcase name="syntax-expr-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.031"/>
+  <testcase name="syntax-expr-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.005"/>
+  <testcase name="syntax-order-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-order-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.031"/>
+  <testcase name="syntax-order-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.006"/>
+  <testcase name="syntax-order-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-order-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.02"/>
+  <testcase name="syntax-order-06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-order-07.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.029"/>
+  <testcase name="syntax-limit-offset-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.031"/>
+  <testcase name="syntax-limit-offset-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-limit-offset-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.035"/>
+  <testcase name="syntax-limit-offset-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.008"/>
+  <testcase name="syntax-pat-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.043"/>
+  <testcase name="syntax-pat-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.049"/>
+  <testcase name="syntax-pat-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.01"/>
+  <testcase name="syntax-pat-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.035"/>
+  <testcase name="syntax-general-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-general-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.029"/>
+  <testcase name="syntax-general-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.009"/>
+  <testcase name="syntax-general-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.03"/>
+  <testcase name="syntax-general-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.02"/>
+  <testcase name="syntax-general-06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.011"/>
+  <testcase name="syntax-general-07.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.073"/>
+  <testcase name="syntax-general-08.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.025"/>
+  <testcase name="syntax-general-09.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.025"/>
+  <testcase name="syntax-general-10.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.009"/>
+  <testcase name="syntax-general-11.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.043"/>
+  <testcase name="syntax-general-12.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.015"/>
+  <testcase name="syntax-general-13.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.075"/>
+  <testcase name="syntax-general-14.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.01"/>
+  <testcase name="syntax-keywords-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.038"/>
+  <testcase name="syntax-keywords-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-keywords-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.095"/>
+  <testcase name="syntax-bnode-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.111"/>
+  <testcase name="syntax-bnode-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.042"/>
+  <testcase name="syntax-bnode-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.02"/>
+  <testcase name="syntax-function-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.048"/>
+  <testcase name="syntax-function-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.006"/>
+  <testcase name="syntax-function-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.006"/>
+  <testcase name="syntax-function-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.017"/>
+  <testcase name="syntax-form-select-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.039"/>
+  <testcase name="syntax-form-select-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.019"/>
+  <testcase name="syntax-form-ask-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.014"/>
+  <testcase name="syntax-form-construct01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.058"/>
+  <testcase name="syntax-form-construct02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-form-construct03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.027"/>
+  <testcase name="syntax-form-construct04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.065"/>
+  <testcase name="syntax-form-construct05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.043"/>
+  <testcase name="syntax-form-construct06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.006"/>
+  <testcase name="syntax-form-construct07.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.017"/>
+  <testcase name="syntax-form-describe01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.009"/>
+  <testcase name="syntax-form-describe02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.01"/>
+  <testcase name="syntax-dataset-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-dataset-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-dataset-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-dataset-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-graph-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-graph-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-graph-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-graph-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.043"/>
+  <testcase name="syntax-graph-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.03"/>
+  <testcase name="syntax-esc-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-esc-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.062"/>
+  <testcase name="syntax-esc-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.025"/>
+  <testcase name="syntax-esc-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.088"/>
+  <testcase name="syntax-esc-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.034"/>
+  <testcase name="syn-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.04"/>
+  <testcase name="syn-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syn-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syn-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syn-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.128"/>
+  <testcase name="syn-06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.014"/>
+  <testcase name="syn-07.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.119"/>
+  <testcase name="syn-08.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.037"/>
+  <testcase name="syn-09.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.078"/>
+  <testcase name="syn-10.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.045"/>
+  <testcase name="syn-11.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.049"/>
+  <testcase name="syn-bad-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.014"/>
+  <testcase name="syn-bad-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.008"/>
+  <testcase name="syn-bad-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syn-bad-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.002"/>
+  <testcase name="syn-bad-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.037"/>
+  <testcase name="syn-bad-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.023"/>
+  <testcase name="syn-bad-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.046"/>
+  <testcase name="syn-bad-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.021"/>
+  <testcase name="syn-bad-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.03"/>
+  <testcase name="syn-bad-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syn-bad-06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.036"/>
+  <testcase name="syn-bad-06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.06"/>
+  <testcase name="syn-bad-07.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.006"/>
+  <testcase name="syn-bad-07.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.013"/>
+  <testcase name="syn-bad-08.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.008"/>
+  <testcase name="syn-bad-08.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.035"/>
+  <testcase name="syn-bad-09.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.027"/>
+  <testcase name="syn-bad-10.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.02"/>
+  <testcase name="syn-bad-11.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.077"/>
+  <testcase name="syn-bad-12.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.015"/>
+  <testcase name="syn-bad-13.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.011"/>
+  <testcase name="syn-bad-14.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.014"/>
+  <testcase name="syn-bad-15.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.042"/>
+  <testcase name="syn-bad-16.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.042"/>
+  <testcase name="syn-bad-17.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.056"/>
+  <testcase name="syn-bad-18.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.009"/>
+  <testcase name="syn-bad-19.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.011"/>
+  <testcase name="syn-bad-20.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.027"/>
+  <testcase name="syn-bad-21.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.043"/>
+  <testcase name="syn-bad-22.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.025"/>
+  <testcase name="syn-bad-23.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.014"/>
+  <testcase name="syn-bad-24.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.061"/>
+  <testcase name="syn-bad-25.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.021"/>
+  <testcase name="syn-bad-26.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.01"/>
+  <testcase name="syn-bad-27.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.011"/>
+  <testcase name="syn-bad-28.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.015"/>
+  <testcase name="syn-bad-29.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.01"/>
+  <testcase name="syn-bad-30.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.016"/>
+  <testcase name="syn-bad-31.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.09"/>
+  <testcase name="syn-bad-32.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.027"/>
+  <testcase name="syn-bad-33.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.021"/>
+  <testcase name="syn-bad-34.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.01"/>
+  <testcase name="syn-bad-35.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.034"/>
+  <testcase name="syn-bad-36.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syn-bad-37.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.025"/>
+  <testcase name="syn-bad-38.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.015"/>
+  <testcase name="syn-bad-39.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.023"/>
+  <testcase name="bnode-dot.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="bnodes-missing-pvalues-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.005"/>
+  <testcase name="bnodes-missing-pvalues-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.01"/>
+  <testcase name="empty-optional-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="empty-optional-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.009"/>
+  <testcase name="filter-missing-parens.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.012"/>
+  <testcase name="lone-list.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="lone-node.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.005"/>
+  <testcase name="syntax-select-expr-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-select-expr-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.003"/>
+  <testcase name="syntax-select-expr-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-select-expr-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-select-expr-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.031"/>
+  <testcase name="syntax-aggregate-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-aggregate-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.041"/>
+  <testcase name="syntax-aggregate-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.013"/>
+  <testcase name="syntax-aggregate-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.015"/>
+  <testcase name="syntax-aggregate-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.026"/>
+  <testcase name="syntax-aggregate-06.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.028"/>
+  <testcase name="syntax-aggregate-07.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.054"/>
+  <testcase name="syntax-aggregate-08.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.062"/>
+  <testcase name="syntax-aggregate-09.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.051"/>
+  <testcase name="syntax-aggregate-10.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.063"/>
+  <testcase name="syntax-aggregate-11.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.035"/>
+  <testcase name="syntax-aggregate-12.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.117"/>
+  <testcase name="syntax-aggregate-13.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.2"/>
+  <testcase name="syntax-aggregate-14.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.125"/>
+  <testcase name="syntax-aggregate-15.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.136"/>
+  <testcase name="syntax-subquery-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.104"/>
+  <testcase name="syntax-subquery-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.14"/>
+  <testcase name="syntax-subquery-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.041"/>
+  <testcase name="syntax-not-exists-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.016"/>
+  <testcase name="syntax-not-exists-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.124"/>
+  <testcase name="syntax-not-exists-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.031"/>
+  <testcase name="syntax-exists-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.01"/>
+  <testcase name="syntax-exists-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.008"/>
+  <testcase name="syntax-exists-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.023"/>
+  <testcase name="syntax-minus-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.058"/>
+  <testcase name="syntax-oneof-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.027"/>
+  <testcase name="syntax-oneof-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.006"/>
+  <testcase name="syntax-oneof-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.03"/>
+  <testcase name="syntax-values-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.023"/>
+  <testcase name="syntax-values-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-values-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.025"/>
+  <testcase name="syntax-values-04.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.024"/>
+  <testcase name="syntax-values-05.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.054"/>
+  <testcase name="syntax-bind-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-bind-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-construct-where-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-construct-where-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.023"/>
+  <testcase name="syntax-values-09.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.016"/>
+  <testcase name="syntax-service-01.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.044"/>
+  <testcase name="syntax-service-02.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.058"/>
+  <testcase name="syntax-service-03.rq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.069"/>
+  <testcase name="syntax-select-expr-01.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.002"/>
+  <testcase name="syntax-select-expr-02.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-select-expr-03.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.067"/>
+  <testcase name="syntax-select-expr-04.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.065"/>
+  <testcase name="syntax-select-expr-05.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.017"/>
+  <testcase name="syntax-select-expr-06.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.016"/>
+  <testcase name="syntax-select-expr-07.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.061"/>
+  <testcase name="syntax-service-01.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.07"/>
+  <testcase name="syntax-group-01.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.01"/>
+  <testcase name="syntax-group-02.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.015"/>
+  <testcase name="syntax-group-03.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-group-04.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.02"/>
+  <testcase name="syntax-count-01.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.114"/>
+  <testcase name="syntax-count-02.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-count-03.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-count-04.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-subquery-01.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.173"/>
+  <testcase name="syntax-subquery-02.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.078"/>
+  <testcase name="syntax-subquery-03.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.025"/>
+  <testcase name="syntax-subquery-04.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.021"/>
+  <testcase name="syntax-let-01.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-let-02.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.002"/>
+  <testcase name="syntax-quad-construct-01.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0"/>
+  <testcase name="syntax-quad-construct-02.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.08"/>
+  <testcase name="syntax-quad-construct-03.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.011"/>
+  <testcase name="syntax-quad-construct-04.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.006"/>
+  <testcase name="syntax-quad-construct-05.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.032"/>
+  <testcase name="syntax-quad-construct-06.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.103"/>
+  <testcase name="syntax-quad-construct-07.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.055"/>
+  <testcase name="syntax-quad-construct-08.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.001"/>
+  <testcase name="syntax-subquery-bad-01.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.026"/>
+  <testcase name="syntax-subquery-bad-02.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.041"/>
+  <testcase name="syntax-let-bad-01.arq" classname="org.apache.jena.sparql.junit.SyntaxTest" time="0.002"/>
+  <testcase name="syntax-update-01.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.029"/>
+  <testcase name="syntax-update-02.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.001"/>
+  <testcase name="syntax-update-03.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.001"/>
+  <testcase name="syntax-update-04.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.047"/>
+  <testcase name="syntax-update-05.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.108"/>
+  <testcase name="syntax-update-06.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.074"/>
+  <testcase name="syntax-update-07.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.023"/>
+  <testcase name="syntax-update-08.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.068"/>
+  <testcase name="syntax-update-09.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.037"/>
+  <testcase name="syntax-update-10.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.036"/>
+  <testcase name="syntax-update-11.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.009"/>
+  <testcase name="syntax-update-12.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.008"/>
+  <testcase name="syntax-update-13.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.039"/>
+  <testcase name="syntax-update-14.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.036"/>
+  <testcase name="syntax-update-15.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.045"/>
+  <testcase name="syntax-update-16.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.023"/>
+  <testcase name="syntax-update-17.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.027"/>
+  <testcase name="syntax-update-18.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.018"/>
+  <testcase name="syntax-update-19.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.026"/>
+  <testcase name="syntax-update-20.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.008"/>
+  <testcase name="syntax-update-21.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.006"/>
+  <testcase name="syntax-update-22.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.036"/>
+  <testcase name="syntax-update-23.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.023"/>
+  <testcase name="syntax-update-24.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.013"/>
+  <testcase name="syntax-update-25.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.026"/>
+  <testcase name="syntax-update-26.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.051"/>
+  <testcase name="syntax-update-27.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.026"/>
+  <testcase name="syntax-update-28.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.075"/>
+  <testcase name="syntax-update-29.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.005"/>
+  <testcase name="syntax-update-30.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.025"/>
+  <testcase name="syntax-update-31.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.024"/>
+  <testcase name="syntax-update-32.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.013"/>
+  <testcase name="syntax-update-33.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0"/>
+  <testcase name="syntax-update-34.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.032"/>
+  <testcase name="syntax-update-35.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.058"/>
+  <testcase name="syntax-update-36.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.053"/>
+  <testcase name="syntax-update-37.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.028"/>
+  <testcase name="syntax-update-38.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.012"/>
+  <testcase name="syntax-update-39.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.001"/>
+  <testcase name="syntax-update-40.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.046"/>
+  <testcase name="syntax-update-bad-01.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0"/>
+  <testcase name="syntax-update-bad-02.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.012"/>
+  <testcase name="syntax-update-bad-03.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.037"/>
+  <testcase name="syntax-update-bad-04.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.041"/>
+  <testcase name="syntax-update-bad-05.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.017"/>
+  <testcase name="syntax-update-bad-06.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.009"/>
+  <testcase name="syntax-update-bad-07.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.015"/>
+  <testcase name="syntax-update-bad-08.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.023"/>
+  <testcase name="syntax-update-bad-09.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.011"/>
+  <testcase name="syntax-update-bad-10.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.012"/>
+  <testcase name="syntax-update-bad-11.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.026"/>
+  <testcase name="syntax-update-bad-12.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.052"/>
+  <testcase name="syntax-update-bad-13.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.006"/>
+  <testcase name="syntax-update-bad-14.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.088"/>
+  <testcase name="syntax-update-bad-15.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.027"/>
+  <testcase name="syntax-update-bad-16.ru" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.111"/>
+  <testcase name="syntax-update-other-01" classname="org.apache.jena.sparql.junit.SyntaxUpdateTest" time="0.108"/>
+  <testcase name="Prefix/Base 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.104"/>
+  <testcase name="Prefix/Base 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.035"/>
+  <testcase name="Prefix/Base 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.009"/>
+  <testcase name="Prefix/Base 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.073"/>
+  <testcase name="Prefix/Base 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.07"/>
+  <testcase name="query-dump-0" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="query-dump-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.001"/>
+  <testcase name="query-dump-2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.001"/>
+  <testcase name="query-dump-3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="query-dump-4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.001"/>
+  <testcase name="query-dump-5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.014"/>
+  <testcase name="query-dump-6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.041"/>
+  <testcase name="query-dump-7" classname="org.apache.jena.sparql.junit.QueryTest" time="0.035"/>
+  <testcase name="query-dump-8" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="query-dump-9" classname="org.apache.jena.sparql.junit.QueryTest" time="0.061"/>
+  <testcase name="query-dump-A" classname="org.apache.jena.sparql.junit.QueryTest" time="0.077"/>
+  <testcase name="test-S-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.051"/>
+  <testcase name="test-S-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.075"/>
+  <testcase name="test-S-03.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.033"/>
+  <testcase name="test-S-04.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.03"/>
+  <testcase name="test-S-05.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="test-0-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.015"/>
+  <testcase name="test-0-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.002"/>
+  <testcase name="test-0-03.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.002"/>
+  <testcase name="test-0-04.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.023"/>
+  <testcase name="test-1-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.037"/>
+  <testcase name="test-1-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.061"/>
+  <testcase name="test-1-03.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.048"/>
+  <testcase name="test-1-04.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.002"/>
+  <testcase name="test-1-05.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.058"/>
+  <testcase name="test-1-06.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.04"/>
+  <testcase name="test-1-07.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.041"/>
+  <testcase name="test-1-08.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.09"/>
+  <testcase name="test-1-10.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.073"/>
+  <testcase name="test-2-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.052"/>
+  <testcase name="test-2-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.075"/>
+  <testcase name="test-2-03.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.04"/>
+  <testcase name="test-2-04.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.024"/>
+  <testcase name="test-2-05.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.027"/>
+  <testcase name="test-2-06.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.076"/>
+  <testcase name="test-2-07.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.128"/>
+  <testcase name="test-2-08.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.044"/>
+  <testcase name="test-2-09.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.062"/>
+  <testcase name="test-2-10.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.076"/>
+  <testcase name="test-3-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.019"/>
+  <testcase name="test-3-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.088"/>
+  <testcase name="test-3-03.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="test-3-04.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.047"/>
+  <testcase name="test-3-05.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.09"/>
+  <testcase name="test-3-06.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.091"/>
+  <testcase name="test-3-07.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.084"/>
+  <testcase name="test-4-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.029"/>
+  <testcase name="test-4-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.056"/>
+  <testcase name="test-4-03.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.086"/>
+  <testcase name="test-4-04.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.039"/>
+  <testcase name="test-4-05.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.032"/>
+  <testcase name="test-4-07.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="test-5-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.106"/>
+  <testcase name="test-5-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.142"/>
+  <testcase name="test-5-03.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.033"/>
+  <testcase name="test-5-04.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.053"/>
+  <testcase name="test-6-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.094"/>
+  <testcase name="test-6-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.021"/>
+  <testcase name="test-6-03.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.016"/>
+  <testcase name="test-6-04.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.024"/>
+  <testcase name="test-7-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.152"/>
+  <testcase name="test-7-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.063"/>
+  <testcase name="test-7-03.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.064"/>
+  <testcase name="test-7-04.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.066"/>
+  <testcase name="test-9-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.026"/>
+  <testcase name="test-9-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="test-B-01.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.03"/>
+  <testcase name="test-B-02.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.082"/>
+  <testcase name="test-B-03.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.013"/>
+  <testcase name="test-B-04.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.041"/>
+  <testcase name="test-B-05.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.086"/>
+  <testcase name="test-B-08.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.08"/>
+  <testcase name="test-B-09.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.08"/>
+  <testcase name="test-B-10.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.148"/>
+  <testcase name="test-B-11.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.056"/>
+  <testcase name="test-B-12.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.063"/>
+  <testcase name="test-B-13.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.129"/>
+  <testcase name="test-B-15.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.022"/>
+  <testcase name="test-B-16.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.098"/>
+  <testcase name="test-B-17.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.162"/>
+  <testcase name="test-B-18.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.019"/>
+  <testcase name="test-B-19.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.038"/>
+  <testcase name="test-B-20.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.158"/>
+  <testcase name="One optional clause" classname="org.apache.jena.sparql.junit.QueryTest" time="0.094"/>
+  <testcase name="Two optional clauses" classname="org.apache.jena.sparql.junit.QueryTest" time="0.135"/>
+  <testcase name="Nested optional clauses [simple]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.046"/>
+  <testcase name="One optional, no fixed clause." classname="org.apache.jena.sparql.junit.QueryTest" time="0.041"/>
+  <testcase name="Two optional, no fixed clause [1]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="Two optional, no fixed clause [2]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.061"/>
+  <testcase name="Two optional, no fixed clause, nested [1]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.106"/>
+  <testcase name="Two optional, no fixed clause, nested [2]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.072"/>
+  <testcase name="Two optional sequential clauses [1]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.128"/>
+  <testcase name="Two optional sequential clauses [2]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.084"/>
+  <testcase name="Union 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.097"/>
+  <testcase name="Union 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.021"/>
+  <testcase name="Union 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.013"/>
+  <testcase name="Union 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.065"/>
+  <testcase name="Union 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.041"/>
+  <testcase name="Union 6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.322"/>
+  <testcase name="Union 7" classname="org.apache.jena.sparql.junit.QueryTest" time="0.042"/>
+  <testcase name="Union 8" classname="org.apache.jena.sparql.junit.QueryTest" time="0.035"/>
+  <testcase name="Union 9" classname="org.apache.jena.sparql.junit.QueryTest" time="0.162"/>
+  <testcase name="Nested Optionals - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.182"/>
+  <testcase name="Nested Optionals - 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.1"/>
+  <testcase name="Optional-filter - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.062"/>
+  <testcase name="Optional-filter - 2 filters" classname="org.apache.jena.sparql.junit.QueryTest" time="0.075"/>
+  <testcase name="Optional-filter - scope of variable" classname="org.apache.jena.sparql.junit.QueryTest" time="0.065"/>
+  <testcase name="Optional-filter - scope with {{}}" classname="org.apache.jena.sparql.junit.QueryTest" time="0.056"/>
+  <testcase name="Filter-placement - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.032"/>
+  <testcase name="Filter-placement - 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.013"/>
+  <testcase name="Filter-placement - 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="Filter-nested - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.04"/>
+  <testcase name="Filter-nested - 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.037"/>
+  <testcase name="Filter-scope - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.033"/>
+  <testcase name="Join scope - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.01"/>
+  <testcase name="opt-equals-01" classname="org.apache.jena.sparql.junit.QueryTest" time="0.068"/>
+  <testcase name="opt-equals-02" classname="org.apache.jena.sparql.junit.QueryTest" time="0.053"/>
+  <testcase name="opt-equals-03" classname="org.apache.jena.sparql.junit.QueryTest" time="0.034"/>
+  <testcase name="opt-equals-04" classname="org.apache.jena.sparql.junit.QueryTest" time="0.059"/>
+  <testcase name="opt-equals-05" classname="org.apache.jena.sparql.junit.QueryTest" time="0.138"/>
+  <testcase name="opt-equals-06" classname="org.apache.jena.sparql.junit.QueryTest" time="0.035"/>
+  <testcase name="opt-equals-07" classname="org.apache.jena.sparql.junit.QueryTest" time="0.009"/>
+  <testcase name="opt-equals-08" classname="org.apache.jena.sparql.junit.QueryTest" time="0.04"/>
+  <testcase name="opt-equals-09" classname="org.apache.jena.sparql.junit.QueryTest" time="0.047"/>
+  <testcase name="opt-equals-10" classname="org.apache.jena.sparql.junit.QueryTest" time="0.047"/>
+  <testcase name="opt-sameTerm-01" classname="org.apache.jena.sparql.junit.QueryTest" time="0.1"/>
+  <testcase name="opt-sameTerm-02" classname="org.apache.jena.sparql.junit.QueryTest" time="0.052"/>
+  <testcase name="opt-sameTerm-03" classname="org.apache.jena.sparql.junit.QueryTest" time="0.145"/>
+  <testcase name="opt-sameTerm-04" classname="org.apache.jena.sparql.junit.QueryTest" time="0.026"/>
+  <testcase name="opt-sameTerm-05" classname="org.apache.jena.sparql.junit.QueryTest" time="0.1"/>
+  <testcase name="opt-sameTerm-06" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="opt-sameTerm-07" classname="org.apache.jena.sparql.junit.QueryTest" time="0.035"/>
+  <testcase name="opt-sameTerm-08" classname="org.apache.jena.sparql.junit.QueryTest" time="0.174"/>
+  <testcase name="opt-sameTerm-09" classname="org.apache.jena.sparql.junit.QueryTest" time="0.043"/>
+  <testcase name="opt-sameTerm-10" classname="org.apache.jena.sparql.junit.QueryTest" time="0.069"/>
+  <testcase name="opt-top-01" classname="org.apache.jena.sparql.junit.QueryTest" time="0.063"/>
+  <testcase name="opt-top-02" classname="org.apache.jena.sparql.junit.QueryTest" time="0.054"/>
+  <testcase name="opt-top-03" classname="org.apache.jena.sparql.junit.QueryTest" time="0.034"/>
+  <testcase name="opt-top-04" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="opt-top-05" classname="org.apache.jena.sparql.junit.QueryTest" time="0.046"/>
+  <testcase name="opt-top-06" classname="org.apache.jena.sparql.junit.QueryTest" time="0.038"/>
+  <testcase name="opt-top-07" classname="org.apache.jena.sparql.junit.QueryTest" time="0.111"/>
+  <testcase name="opt-top-08" classname="org.apache.jena.sparql.junit.QueryTest" time="0.049"/>
+  <testcase name="opt-top-09" classname="org.apache.jena.sparql.junit.QueryTest" time="0.149"/>
+  <testcase name="opt-top-10" classname="org.apache.jena.sparql.junit.QueryTest" time="0.061"/>
+  <testcase name="opt-top-11" classname="org.apache.jena.sparql.junit.QueryTest" time="0.041"/>
+  <testcase name="opt-top-12" classname="org.apache.jena.sparql.junit.QueryTest" time="0.06"/>
+  <testcase name="opt-top-13" classname="org.apache.jena.sparql.junit.QueryTest" time="0.092"/>
+  <testcase name="opt-distinct-to-reduced-01" classname="org.apache.jena.sparql.junit.QueryTest" time="0.055"/>
+  <testcase name="opt-distinct-to-reduced-02" classname="org.apache.jena.sparql.junit.QueryTest" time="0.033"/>
+  <testcase name="opt-distinct-to-reduced-03" classname="org.apache.jena.sparql.junit.QueryTest" time="0.056"/>
+  <testcase name="filter-equality-01" classname="org.apache.jena.sparql.junit.QueryTest" time="0.044"/>
+  <testcase name="filter-equality-02" classname="org.apache.jena.sparql.junit.QueryTest" time="0.007"/>
+  <testcase name="filter-equality-03" classname="org.apache.jena.sparql.junit.QueryTest" time="0.057"/>
+  <testcase name="filter-equality-04" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="filter-equality-05" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="filter-equality-06" classname="org.apache.jena.sparql.junit.QueryTest" time="0.037"/>
+  <testcase name="filter-equality-07" classname="org.apache.jena.sparql.junit.QueryTest" time="0.005"/>
+  <testcase name="filter-equality-08" classname="org.apache.jena.sparql.junit.QueryTest" time="0.053"/>
+  <testcase name="filter-equality-10" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="filter-equality-11" classname="org.apache.jena.sparql.junit.QueryTest" time="0.073"/>
+  <testcase name="filter-equality-12" classname="org.apache.jena.sparql.junit.QueryTest" time="0.012"/>
+  <testcase name="filter-equality-13" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="filter-equality-14" classname="org.apache.jena.sparql.junit.QueryTest" time="0.036"/>
+  <testcase name="select-0" classname="org.apache.jena.sparql.junit.QueryTest" time="0.045"/>
+  <testcase name="select-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.032"/>
+  <testcase name="select-2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.025"/>
+  <testcase name="select-3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.002"/>
+  <testcase name="select-4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.022"/>
+  <testcase name="select-5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.036"/>
+  <testcase name="Construct 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.048"/>
+  <testcase name="Construct 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.059"/>
+  <testcase name="Reification 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.022"/>
+  <testcase name="Reification 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.04"/>
+  <testcase name="Construct Quad: Named Graph" classname="org.apache.jena.sparql.junit.QueryTest" time="0.072">
+    <failure message="Exception: java.lang.UnsupportedOperationException: Not supported yet." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Exception: java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:219)
+</failure>
+    <system-err><![CDATA[java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.query.QueryExecutionFactory$1.execConstructDataset(QueryExecutionFactory.java:601)
+	at org.apache.jena.sparql.junit.QueryTest.runTestConstruct(QueryTest.java:387)
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:202)
+	at org.apache.jena.sparql.junit.EarlTestCase.runTest(EarlTestCase.java:88)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]></system-err>
+  </testcase>
+  <testcase name="Construct Quad: Default Graph 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.043"/>
+  <testcase name="Construct Quad: Default Graph 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.011"/>
+  <testcase name="Construct Quad: Dataset" classname="org.apache.jena.sparql.junit.QueryTest" time="0.054">
+    <failure message="Exception: java.lang.UnsupportedOperationException: Not supported yet." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Exception: java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:219)
+</failure>
+    <system-err><![CDATA[java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.query.QueryExecutionFactory$1.execConstructDataset(QueryExecutionFactory.java:601)
+	at org.apache.jena.sparql.junit.QueryTest.runTestConstruct(QueryTest.java:387)
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:202)
+	at org.apache.jena.sparql.junit.EarlTestCase.runTest(EarlTestCase.java:88)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]></system-err>
+  </testcase>
+  <testcase name="Construct Quad: Short Form 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.051">
+    <failure message="Exception: java.lang.UnsupportedOperationException: Not supported yet." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Exception: java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:219)
+</failure>
+    <system-err><![CDATA[java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.query.QueryExecutionFactory$1.execConstructDataset(QueryExecutionFactory.java:601)
+	at org.apache.jena.sparql.junit.QueryTest.runTestConstruct(QueryTest.java:387)
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:202)
+	at org.apache.jena.sparql.junit.EarlTestCase.runTest(EarlTestCase.java:88)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]></system-err>
+  </testcase>
+  <testcase name="Construct Quad: Short Form 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.018"/>
+  <testcase name="Construct Quad: Short Form 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.023">
+    <failure message="Exception: java.lang.UnsupportedOperationException: Not supported yet." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Exception: java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:219)
+</failure>
+    <system-err><![CDATA[java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.query.QueryExecutionFactory$1.execConstructDataset(QueryExecutionFactory.java:601)
+	at org.apache.jena.sparql.junit.QueryTest.runTestConstruct(QueryTest.java:387)
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:202)
+	at org.apache.jena.sparql.junit.EarlTestCase.runTest(EarlTestCase.java:88)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]></system-err>
+  </testcase>
+  <testcase name="Construct Quad: Syntax 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.04">
+    <failure message="Exception: java.lang.UnsupportedOperationException: Not supported yet." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Exception: java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:219)
+</failure>
+    <system-err><![CDATA[java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.query.QueryExecutionFactory$1.execConstructDataset(QueryExecutionFactory.java:601)
+	at org.apache.jena.sparql.junit.QueryTest.runTestConstruct(QueryTest.java:387)
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:202)
+	at org.apache.jena.sparql.junit.EarlTestCase.runTest(EarlTestCase.java:88)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]></system-err>
+  </testcase>
+  <testcase name="Construct Quad: Syntax 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.018">
+    <failure message="Exception: java.lang.UnsupportedOperationException: Not supported yet." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Exception: java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:219)
+</failure>
+    <system-err><![CDATA[java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.query.QueryExecutionFactory$1.execConstructDataset(QueryExecutionFactory.java:601)
+	at org.apache.jena.sparql.junit.QueryTest.runTestConstruct(QueryTest.java:387)
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:202)
+	at org.apache.jena.sparql.junit.EarlTestCase.runTest(EarlTestCase.java:88)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]></system-err>
+  </testcase>
+  <testcase name="Construct Quad: Syntax 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.072"/>
+  <testcase name="Construct Quad: Syntax 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.02">
+    <failure message="Exception: java.lang.UnsupportedOperationException: Not supported yet." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Exception: java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:219)
+</failure>
+    <system-err><![CDATA[java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.query.QueryExecutionFactory$1.execConstructDataset(QueryExecutionFactory.java:601)
+	at org.apache.jena.sparql.junit.QueryTest.runTestConstruct(QueryTest.java:387)
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:202)
+	at org.apache.jena.sparql.junit.EarlTestCase.runTest(EarlTestCase.java:88)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]></system-err>
+  </testcase>
+  <testcase name="Construct Quad: Syntax 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028">
+    <failure message="Exception: java.lang.UnsupportedOperationException: Not supported yet." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Exception: java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:219)
+</failure>
+    <system-err><![CDATA[java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.query.QueryExecutionFactory$1.execConstructDataset(QueryExecutionFactory.java:601)
+	at org.apache.jena.sparql.junit.QueryTest.runTestConstruct(QueryTest.java:387)
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:202)
+	at org.apache.jena.sparql.junit.EarlTestCase.runTest(EarlTestCase.java:88)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]></system-err>
+  </testcase>
+  <testcase name="Construct Quad: Syntax 6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.032">
+    <failure message="Exception: java.lang.UnsupportedOperationException: Not supported yet." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Exception: java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:219)
+</failure>
+    <system-err><![CDATA[java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.query.QueryExecutionFactory$1.execConstructDataset(QueryExecutionFactory.java:601)
+	at org.apache.jena.sparql.junit.QueryTest.runTestConstruct(QueryTest.java:387)
+	at org.apache.jena.sparql.junit.QueryTest.runTestForReal(QueryTest.java:202)
+	at org.apache.jena.sparql.junit.EarlTestCase.runTest(EarlTestCase.java:88)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]></system-err>
+  </testcase>
+  <testcase name="Construct Quad: Syntax 7" classname="org.apache.jena.sparql.junit.QueryTest" time="0.022"/>
+  <testcase name="Construct Quad: Syntax 7" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="Describe 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.207"/>
+  <testcase name="Describe 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="Describe 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.054"/>
+  <testcase name="Describe 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.008"/>
+  <testcase name="Describe 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.048"/>
+  <testcase name="Describe 6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.083"/>
+  <testcase name="ASK-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.043"/>
+  <testcase name="ASK-2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.033"/>
+  <testcase name="ASK-3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.056"/>
+  <testcase name="ASK-4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.06"/>
+  <testcase name="ASK-5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.053"/>
+  <testcase name="ASK-6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.025"/>
+  <testcase name="ASK-7" classname="org.apache.jena.sparql.junit.QueryTest" time="0.107"/>
+  <testcase name="ASK-8" classname="org.apache.jena.sparql.junit.QueryTest" time="0.071"/>
+  <testcase name="graph-01" classname="org.apache.jena.sparql.junit.QueryTest" time="0.162"/>
+  <testcase name="graph-02" classname="org.apache.jena.sparql.junit.QueryTest" time="0.118"/>
+  <testcase name="graph-03" classname="org.apache.jena.sparql.junit.QueryTest" time="0.055"/>
+  <testcase name="graph-04" classname="org.apache.jena.sparql.junit.QueryTest" time="0.069"/>
+  <testcase name="graph-05" classname="org.apache.jena.sparql.junit.QueryTest" time="0.038"/>
+  <testcase name="graph-06" classname="org.apache.jena.sparql.junit.QueryTest" time="0.16"/>
+  <testcase name="graph-07" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="graph-08" classname="org.apache.jena.sparql.junit.QueryTest" time="0.065"/>
+  <testcase name="graph-09" classname="org.apache.jena.sparql.junit.QueryTest" time="0.058"/>
+  <testcase name="graph-10" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="graph-11" classname="org.apache.jena.sparql.junit.QueryTest" time="0.108"/>
+  <testcase name="graph-20" classname="org.apache.jena.sparql.junit.QueryTest" time="0.094"/>
+  <testcase name="graph-21" classname="org.apache.jena.sparql.junit.QueryTest" time="0.093"/>
+  <testcase name="dawg-bound-query-001" classname="org.apache.jena.sparql.junit.QueryTest" time="0.044"/>
+  <testcase name="Expr 1 - FILTER true" classname="org.apache.jena.sparql.junit.QueryTest" time="0.036"/>
+  <testcase name="Expr 2 - FILTER false" classname="org.apache.jena.sparql.junit.QueryTest" time="0.024"/>
+  <testcase name="Expr 3 - Triple pattern and FILTER true" classname="org.apache.jena.sparql.junit.QueryTest" time="0.017"/>
+  <testcase name="Expr 4 - Triple pattern and FILTER false" classname="org.apache.jena.sparql.junit.QueryTest" time="0.03"/>
+  <testcase name="OPTIONAL-FILTER" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="OPTIONAL - Outer FILTER" classname="org.apache.jena.sparql.junit.QueryTest" time="0.116"/>
+  <testcase name="OPTIONAL - Outer FILTER with BOUND" classname="org.apache.jena.sparql.junit.QueryTest" time="0.135"/>
+  <testcase name="Test &apos;boolean effective value&apos; - true" classname="org.apache.jena.sparql.junit.QueryTest" time="0.026"/>
+  <testcase name="Test &apos;boolean effective value&apos; - false" classname="org.apache.jena.sparql.junit.QueryTest" time="0.073"/>
+  <testcase name="Test &apos;boolean effective value&apos; - &amp;&amp;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.051"/>
+  <testcase name="Test &apos;boolean effective value&apos; - ||" classname="org.apache.jena.sparql.junit.QueryTest" time="0.016"/>
+  <testcase name="Test &apos;boolean effective value&apos; - optional" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="Test &apos;boolean effective value&apos; - unknown type" classname="org.apache.jena.sparql.junit.QueryTest" time="0.033"/>
+  <testcase name="str-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.018"/>
+  <testcase name="str-2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="str-3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="str-4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="isBlank-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.047"/>
+  <testcase name="datatype-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.073"/>
+  <testcase name="datatype-2 : Literals with a datatype" classname="org.apache.jena.sparql.junit.QueryTest" time="0.029"/>
+  <testcase name="datatype-3 : Literals with a datatype of xsd:string" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="datatype-4 : Literals with a datatype of rdf:langString" classname="org.apache.jena.sparql.junit.QueryTest" time="0.03"/>
+  <testcase name="lang-1 : Literals with a lang tag of some kind" classname="org.apache.jena.sparql.junit.QueryTest" time="0.036"/>
+  <testcase name="lang-2 : Literals with a lang tag of &apos;&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.018"/>
+  <testcase name="lang-3 : Graph matching with lang tag being a different case" classname="org.apache.jena.sparql.junit.QueryTest" time="0.029"/>
+  <testcase name="isURI-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.034"/>
+  <testcase name="isIRI-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="LangMatches-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.044"/>
+  <testcase name="LangMatches-2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.064"/>
+  <testcase name="LangMatches-3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="LangMatches-4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.021"/>
+  <testcase name="FILTER - &apos;= true&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.02"/>
+  <testcase name="FILTER - &apos;= false&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.032"/>
+  <testcase name="FILTER - &apos;!= true&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="FILTER - &apos;NOT of [= true]&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.302"/>
+  <testcase name="FILTER - &apos;NOT of [ != true]&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.037"/>
+  <testcase name="Equality 1-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.1"/>
+  <testcase name="Equality 1-2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.02"/>
+  <testcase name="Equality 1-3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.017"/>
+  <testcase name="Equality 1-4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.044"/>
+  <testcase name="Equality 1-5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.011"/>
+  <testcase name="Equality - 2 var - test equals" classname="org.apache.jena.sparql.junit.QueryTest" time="0.035"/>
+  <testcase name="Equality 1-3 -- graph" classname="org.apache.jena.sparql.junit.QueryTest" time="0.006"/>
+  <testcase name="Equality 1-4 -- graph" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="Equality 1-5 -- graph" classname="org.apache.jena.sparql.junit.QueryTest" time="0.025"/>
+  <testcase name="regex-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="regex-2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.014"/>
+  <testcase name="regex-3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.005"/>
+  <testcase name="regex-4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.037"/>
+  <testcase name="regex-5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.045"/>
+  <testcase name="open-eq-01 - graph match - no lexical form in data [assumes no value matching]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.048"/>
+  <testcase name="open-eq-02 - graph match - unknown type" classname="org.apache.jena.sparql.junit.QueryTest" time="0.068"/>
+  <testcase name="open-eq-03 - Filter[?v=1]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="open-eq-04 - Filter[?v!=1]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.044"/>
+  <testcase name="open-eq-05 - FILTER[?v = unknown type]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.069"/>
+  <testcase name="open-eq-06 - FILTER[?v != unknown type]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.076"/>
+  <testcase name="open-eq-07 - Test of &apos;=&apos; " classname="org.apache.jena.sparql.junit.QueryTest" time="0.198"/>
+  <testcase name="open-eq-08 - Test of &apos;!=&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.096"/>
+  <testcase name="open-eq-09 - Test of &apos;=&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.063"/>
+  <testcase name="open-eq-10 - Test of &apos;!=&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.026"/>
+  <testcase name="open-eq-11 - test of &apos;=&apos; || &apos;!=&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.044"/>
+  <testcase name="open-eq-12 - find pairs that don&apos;t value-compare" classname="org.apache.jena.sparql.junit.QueryTest" time="0.022"/>
+  <testcase name="date-1 - Added type : xsd:date &apos;=&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.029"/>
+  <testcase name="date-2 - Added type : xsd:date &apos;!=&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="date-3 - Added type : xsd:date &apos;&gt;&apos;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="date-4 - xsd:date ORDER BY" classname="org.apache.jena.sparql.junit.QueryTest" time="0.024"/>
+  <testcase name="open-cmp-01 - Find things that compare with &lt; or &gt;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.012"/>
+  <testcase name="open-cmp-02 - Find things that compare with &lt;= and &gt;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="Function - unknown" classname="org.apache.jena.sparql.junit.QueryTest" time="0.032"/>
+  <testcase name="Function - known, registered" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="Function - loaded as &lt;java:&gt;" classname="org.apache.jena.sparql.junit.QueryTest" time="0.043"/>
+  <testcase name="Function - loaded via known library prefix" classname="org.apache.jena.sparql.junit.QueryTest" time="0.058"/>
+  <testcase name="Lang 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.068"/>
+  <testcase name="Lang 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="sha1sum 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.055"/>
+  <testcase name="sha1sum 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.012"/>
+  <testcase name="substring - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.039"/>
+  <testcase name="substring - 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.018"/>
+  <testcase name="substring - 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.009"/>
+  <testcase name="strlen - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.017"/>
+  <testcase name="strlen - 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.02"/>
+  <testcase name="Localname - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.053"/>
+  <testcase name="Namespace - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.045"/>
+  <testcase name="Concat - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.03"/>
+  <testcase name="Concat - 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.014"/>
+  <testcase name="strjoin - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.034"/>
+  <testcase name="strjoin - 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="Property Function - list 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.165"/>
+  <testcase name="Property Function - list 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.025"/>
+  <testcase name="Property Function - list 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.041"/>
+  <testcase name="Property Function - list 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.021"/>
+  <testcase name="Property Function - list 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.043"/>
+  <testcase name="Property Function - list 6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="Property Function - list 7" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="Property Function - list 8" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="Property Function - list 9" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="Property Function - list length 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.023"/>
+  <testcase name="Property Function - list length 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.016"/>
+  <testcase name="Property Function - list length 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="Property Function - list index 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.014"/>
+  <testcase name="Property Function - list index 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.03"/>
+  <testcase name="Property Function - list index 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.02"/>
+  <testcase name="Property Function - list index 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.021"/>
+  <testcase name="Property Function - list index 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.04"/>
+  <testcase name="Property Function - list index 6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.005"/>
+  <testcase name="Property Function - list index 7" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="Property Function - list index 8" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="Property Function - list index 9" classname="org.apache.jena.sparql.junit.QueryTest" time="0.006"/>
+  <testcase name="Property Function - container 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.024"/>
+  <testcase name="Property Function - container 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.035"/>
+  <testcase name="Property Function - container 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.042"/>
+  <testcase name="Property Function - container 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.039"/>
+  <testcase name="Property Function - container 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="Property Function - container 6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.058"/>
+  <testcase name="Property Function - container 7" classname="org.apache.jena.sparql.junit.QueryTest" time="0.058"/>
+  <testcase name="Property Function - container 8" classname="org.apache.jena.sparql.junit.QueryTest" time="0.033"/>
+  <testcase name="Property Function - container 9" classname="org.apache.jena.sparql.junit.QueryTest" time="0.041"/>
+  <testcase name="Property Function - sequence 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.155"/>
+  <testcase name="Property Function - splitIRI 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.101"/>
+  <testcase name="Property Function - splitIRI 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.013"/>
+  <testcase name="Property Function - splitIRI 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.052"/>
+  <testcase name="Property Function - splitIRI 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.071"/>
+  <testcase name="Property Function - splitIRI 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.036"/>
+  <testcase name="Property Function - splitIRI 6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.017"/>
+  <testcase name="Property Function - splitIRI 7" classname="org.apache.jena.sparql.junit.QueryTest" time="0.022"/>
+  <testcase name="Property Function - splitIRI 8" classname="org.apache.jena.sparql.junit.QueryTest" time="0.592"/>
+  <testcase name="Property Function - splitIRI 9" classname="org.apache.jena.sparql.junit.QueryTest" time="0.036"/>
+  <testcase name="Property Function - Assign 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.102"/>
+  <testcase name="Property Function - Assign 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.032"/>
+  <testcase name="Property Function - Assign 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.016"/>
+  <testcase name="Property Function - Assign 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.057"/>
+  <testcase name="Property Function - Assign 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.074"/>
+  <testcase name="Property Function - Assign 6 [via java:]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.054"/>
+  <testcase name="Property Function - str" classname="org.apache.jena.sparql.junit.QueryTest" time="0.055"/>
+  <testcase name="Property Function - concat" classname="org.apache.jena.sparql.junit.QueryTest" time="0.168"/>
+  <testcase name="tP-double-double" classname="org.apache.jena.sparql.junit.QueryTest" time="0.157"/>
+  <testcase name="tP-double-float" classname="org.apache.jena.sparql.junit.QueryTest" time="0.022"/>
+  <testcase name="tP-double-decimal" classname="org.apache.jena.sparql.junit.QueryTest" time="0.032"/>
+  <testcase name="tP-float-float" classname="org.apache.jena.sparql.junit.QueryTest" time="0.046"/>
+  <testcase name="tP-float-decimal" classname="org.apache.jena.sparql.junit.QueryTest" time="0.032"/>
+  <testcase name="tP-decimal-decimal" classname="org.apache.jena.sparql.junit.QueryTest" time="0.023"/>
+  <testcase name="tP-integer-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.03"/>
+  <testcase name="tP-nonPositiveInteger-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.017"/>
+  <testcase name="tP-negativeInteger-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.031"/>
+  <testcase name="tP-long-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="tP-int-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="tP-short-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="tP-byte-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.032"/>
+  <testcase name="tP-nonNegativeInteger-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="tP-unsignedLong-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="tP-unsignedInt-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.019"/>
+  <testcase name="tP-unsignedShort-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.03"/>
+  <testcase name="tP-unsignedByte-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="tP-positiveInteger-short" classname="org.apache.jena.sparql.junit.QueryTest" time="0.01"/>
+  <testcase name="tP-short-double" classname="org.apache.jena.sparql.junit.QueryTest" time="0.027"/>
+  <testcase name="tP-short-float" classname="org.apache.jena.sparql.junit.QueryTest" time="0.027"/>
+  <testcase name="tP-short-decimal" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="tP-short-short-fail" classname="org.apache.jena.sparql.junit.QueryTest" time="0.044"/>
+  <testcase name="tP-byte-short-fail" classname="org.apache.jena.sparql.junit.QueryTest" time="0.059"/>
+  <testcase name="tP-short-long-fail" classname="org.apache.jena.sparql.junit.QueryTest" time="0.038"/>
+  <testcase name="tP-short-int-fail" classname="org.apache.jena.sparql.junit.QueryTest" time="0.024"/>
+  <testcase name="tP-short-byte-fail" classname="org.apache.jena.sparql.junit.QueryTest" time="0.013"/>
+  <testcase name="tP-double-float-fail" classname="org.apache.jena.sparql.junit.QueryTest" time="0.003"/>
+  <testcase name="tP-double-decimal-fail" classname="org.apache.jena.sparql.junit.QueryTest" time="0.029"/>
+  <testcase name="tP-float-decimal-fail" classname="org.apache.jena.sparql.junit.QueryTest" time="0.011"/>
+  <testcase name="sort-1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.093"/>
+  <testcase name="sort-2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.025"/>
+  <testcase name="sort-3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.034"/>
+  <testcase name="sort-4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.021"/>
+  <testcase name="sort-5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.013"/>
+  <testcase name="sort-6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.047"/>
+  <testcase name="sort-7" classname="org.apache.jena.sparql.junit.QueryTest" time="0.117"/>
+  <testcase name="sort-8" classname="org.apache.jena.sparql.junit.QueryTest" time="0.019"/>
+  <testcase name="sort-9" classname="org.apache.jena.sparql.junit.QueryTest" time="0.057"/>
+  <testcase name="sort-10" classname="org.apache.jena.sparql.junit.QueryTest" time="0.038"/>
+  <testcase name="extendedType-eq-pass" classname="org.apache.jena.sparql.junit.QueryTest" time="0.059"/>
+  <testcase name="extendedType-ne-fail" classname="org.apache.jena.sparql.junit.QueryTest" time="0.007"/>
+  <testcase name="extendedType-literal-eq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.115"/>
+  <testcase name="extendedType-literal-ne" classname="org.apache.jena.sparql.junit.QueryTest" time="0.043"/>
+  <testcase name="extendedType-graph" classname="org.apache.jena.sparql.junit.QueryTest" time="0.054"/>
+  <testcase name="typePromotion-decimal-decimal-pass" classname="org.apache.jena.sparql.junit.QueryTest" time="0.041"/>
+  <testcase name="typePromotion-decimal-decimal-fail" classname="org.apache.jena.sparql.junit.QueryTest" time="0.04"/>
+  <testcase name="boolean-equiv-FALSE" classname="org.apache.jena.sparql.junit.QueryTest" time="0.058"/>
+  <testcase name="boolean-equiv-TRUE" classname="org.apache.jena.sparql.junit.QueryTest" time="0.025"/>
+  <testcase name="boolean-equiv-xsdType" classname="org.apache.jena.sparql.junit.QueryTest" time="0.047"/>
+  <testcase name="boolean-logical-OR" classname="org.apache.jena.sparql.junit.QueryTest" time="0.023"/>
+  <testcase name="boolean-false-canonical" classname="org.apache.jena.sparql.junit.QueryTest" time="0.112"/>
+  <testcase name="boolean-true-canonical" classname="org.apache.jena.sparql.junit.QueryTest" time="0.083"/>
+  <testcase name="boolean-EBV-canonical" classname="org.apache.jena.sparql.junit.QueryTest" time="0.083"/>
+  <testcase name="xsd-string-lt" classname="org.apache.jena.sparql.junit.QueryTest" time="0.026"/>
+  <testcase name="xsd-string-gt" classname="org.apache.jena.sparql.junit.QueryTest" time="0.106"/>
+  <testcase name="No modifiers [numbers]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.097"/>
+  <testcase name="Modifier DISTINCT" classname="org.apache.jena.sparql.junit.QueryTest" time="0.063"/>
+  <testcase name="Modifier ORDER BY [numbers]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.147"/>
+  <testcase name="Modifier DISTINCT and ORDER BY [numbers]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.099"/>
+  <testcase name="No modifiers [strings]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.027"/>
+  <testcase name="Modifier ORDER BY [strings]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.097"/>
+  <testcase name="Modifier OFFSET" classname="org.apache.jena.sparql.junit.QueryTest" time="0.058"/>
+  <testcase name="Modifier LIMIT" classname="org.apache.jena.sparql.junit.QueryTest" time="0.026"/>
+  <testcase name="Modifier DISTINCT-LIMIT" classname="org.apache.jena.sparql.junit.QueryTest" time="0.23"/>
+  <testcase name="Modifier LIMIT-OFFSET" classname="org.apache.jena.sparql.junit.QueryTest" time="0.177"/>
+  <testcase name="Modifier ORDER BY [duplicates after projection]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.187"/>
+  <testcase name="Modifier ORDER BY [duplicates due to blank nodes]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.245"/>
+  <testcase name="Base case - fixed then optional" classname="org.apache.jena.sparql.junit.QueryTest" time="0.275"/>
+  <testcase name="Optional then fixed" classname="org.apache.jena.sparql.junit.QueryTest" time="0.092"/>
+  <testcase name="Fixed, then two optionals" classname="org.apache.jena.sparql.junit.QueryTest" time="0.116"/>
+  <testcase name="Bad lexical form - query" classname="org.apache.jena.sparql.junit.QueryTest" time="0.165"/>
+  <testcase name="Bad lexical form - data" classname="org.apache.jena.sparql.junit.QueryTest" time="0.199"/>
+  <testcase name="Numbers: No distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.379"/>
+  <testcase name="Numbers: Distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.092"/>
+  <testcase name="Strings: No distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.234"/>
+  <testcase name="Strings: Distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.072"/>
+  <testcase name="Nodes: No distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.135"/>
+  <testcase name="Nodes: Distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.08"/>
+  <testcase name="Opt: No distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.124"/>
+  <testcase name="Opt: Distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.209"/>
+  <testcase name="All: No distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.027"/>
+  <testcase name="All: Distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.034"/>
+  <testcase name="Multipath / bnode variables / not distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.28"/>
+  <testcase name="Multipath / path{2} / not distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.095"/>
+  <testcase name="Multipath / sequence / not distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.002"/>
+  <testcase name="Multipath / bnode variables / distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.039"/>
+  <testcase name="Multipath / path{2} / distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.158"/>
+  <testcase name="Multipath / seq path / distinct" classname="org.apache.jena.sparql.junit.QueryTest" time="0.082"/>
+  <testcase name="Multipath / bnode variables / reduced" classname="org.apache.jena.sparql.junit.QueryTest" time="0.055"/>
+  <testcase name="Multipath / path{2} / reduced" classname="org.apache.jena.sparql.junit.QueryTest" time="0.002"/>
+  <testcase name="Multipath / seq path / reduced" classname="org.apache.jena.sparql.junit.QueryTest" time="0.02"/>
+  <testcase name="Sort 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.079"/>
+  <testcase name="Sort 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.157"/>
+  <testcase name="Sort 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.105"/>
+  <testcase name="Order 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.068"/>
+  <testcase name="Order 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.086"/>
+  <testcase name="Order 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.078"/>
+  <testcase name="Test [ref]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.081"/>
+  <testcase name="Filter placement in BGPs with property function" classname="org.apache.jena.sparql.junit.QueryTest" time="0.097"/>
+  <testcase name="Assign 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.155"/>
+  <testcase name="Assign 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="Assign 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.121"/>
+  <testcase name="Assign 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.051"/>
+  <testcase name="Assign 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.187"/>
+  <testcase name="Assign 6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.161"/>
+  <testcase name="Assign 8" classname="org.apache.jena.sparql.junit.QueryTest" time="0.124"/>
+  <testcase name="Assign 9" classname="org.apache.jena.sparql.junit.QueryTest" time="0.168"/>
+  <testcase name="Select expr 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.068"/>
+  <testcase name="Select expr 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.031"/>
+  <testcase name="Select expr 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.028"/>
+  <testcase name="Select expr 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.065"/>
+  <testcase name="Select expr 5" classname="org.apache.jena.sparql.junit.QueryTest" time="0.083"/>
+  <testcase name="Select expr 6" classname="org.apache.jena.sparql.junit.QueryTest" time="0.047"/>
+  <testcase name="Group By - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.211"/>
+  <testcase name="Group By - 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.071"/>
+  <testcase name="Group By - 3 [Group var does not occur]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.143"/>
+  <testcase name="Group By - 4 [Group expression]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.065"/>
+  <testcase name="Group By - 5 [Named group expression]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.064"/>
+  <testcase name="Group By - 6 [Named group expression]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.019"/>
+  <testcase name="Group By - 10" classname="org.apache.jena.sparql.junit.QueryTest" time="0.107"/>
+  <testcase name="Group By - 11" classname="org.apache.jena.sparql.junit.QueryTest" time="0.004"/>
+  <testcase name="Group By - 12" classname="org.apache.jena.sparql.junit.QueryTest" time="0.024"/>
+  <testcase name="Group By - 20 / Zero data" classname="org.apache.jena.sparql.junit.QueryTest" time="0.026"/>
+  <testcase name="Count - 1 - No Group" classname="org.apache.jena.sparql.junit.QueryTest" time="0.069"/>
+  <testcase name="Count - 2 - No Group" classname="org.apache.jena.sparql.junit.QueryTest" time="0.015"/>
+  <testcase name="Count - 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.143"/>
+  <testcase name="Count - 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.093"/>
+  <testcase name="Count - 5 - count[*] / count[distinct *]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.061"/>
+  <testcase name="Count - 6 - count[?var] / count[distinct ?var]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.132"/>
+  <testcase name="Count - 7 - count[*] / count[*]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.236"/>
+  <testcase name="Count - 10 - count[*] / no matches" classname="org.apache.jena.sparql.junit.QueryTest" time="0.096"/>
+  <testcase name="Count - 11 - count[distinct *] / group / no matches" classname="org.apache.jena.sparql.junit.QueryTest" time="0.062"/>
+  <testcase name="Count - 12 - count[?z] / no matches" classname="org.apache.jena.sparql.junit.QueryTest" time="0.029"/>
+  <testcase name="Count - 13 - count[distinct ?z] / group / no matches" classname="org.apache.jena.sparql.junit.QueryTest" time="0.144"/>
+  <testcase name="Count - 20 - No group" classname="org.apache.jena.sparql.junit.QueryTest" time="0.064"/>
+  <testcase name="Count - 21 - No group - count[distinct ?var]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.149"/>
+  <testcase name="Count - 22 - count[?var]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.114"/>
+  <testcase name="Count - 23 - count[?var] - empty" classname="org.apache.jena.sparql.junit.QueryTest" time="0.123"/>
+  <testcase name="Sum - 1 - sum[?v]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.093"/>
+  <testcase name="Min - 1 - min[?v]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.119"/>
+  <testcase name="Max - 1 - max[?v]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.154"/>
+  <testcase name="Avg - 1 - avg[?v]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.246"/>
+  <testcase name="Having - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.005"/>
+  <testcase name="No rows in group - 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.18"/>
+  <testcase name="No rows in group - 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.133"/>
+  <testcase name="Sub SELECT 1" classname="org.apache.jena.sparql.junit.QueryTest" time="0.122"/>
+  <testcase name="Sub SELECT 2" classname="org.apache.jena.sparql.junit.QueryTest" time="0.148"/>
+  <testcase name="Sub SELECT 3" classname="org.apache.jena.sparql.junit.QueryTest" time="0.143"/>
+  <testcase name="Sub SELECT 4" classname="org.apache.jena.sparql.junit.QueryTest" time="0.422"/>
+  <testcase name="graph-subquery-1.rq" classname="org.apache.jena.sparql.junit.QueryTest" time="0.169"/>
+  <testcase name="Path-01" classname="org.apache.jena.sparql.junit.QueryTest" time="0.222"/>
+  <testcase name="Path-02" classname="org.apache.jena.sparql.junit.QueryTest" time="0.222"/>
+  <testcase name="Path-03" classname="org.apache.jena.sparql.junit.QueryTest" time="0.071"/>
+  <testcase name="Path-04" classname="org.apache.jena.sparql.junit.QueryTest" time="0.069"/>
+  <testcase name="Path-05" classname="org.apache.jena.sparql.junit.QueryTest" time="0.107"/>
+  <testcase name="Path-06" classname="org.apache.jena.sparql.junit.QueryTest" time="0.092"/>
+  <testcase name="Path-07" classname="org.apache.jena.sparql.junit.QueryTest" time="0.08"/>
+  <testcase name="Path-10" classname="org.apache.jena.sparql.junit.QueryTest" time="0.057"/>
+  <testcase name="Path-11" classname="org.apache.jena.sparql.junit.QueryTest" time="0.085"/>
+  <testcase name="Path-20" classname="org.apache.jena.sparql.junit.QueryTest" time="0.05"/>
+  <testcase name="Path-21" classname="org.apache.jena.sparql.junit.QueryTest" time="0.095"/>
+  <testcase name="Path-22" classname="org.apache.jena.sparql.junit.QueryTest" time="0.058"/>
+  <testcase name="Negation-01" classname="org.apache.jena.sparql.junit.QueryTest" time="0.177"/>
+  <testcase name="Negation-02" classname="org.apache.jena.sparql.junit.QueryTest" time="0.268"/>
+  <testcase name="Negation-03" classname="org.apache.jena.sparql.junit.QueryTest" time="0.132"/>
+  <testcase name="Negation-04" classname="org.apache.jena.sparql.junit.QueryTest" time="0.146"/>
+  <testcase name="Negation-05" classname="org.apache.jena.sparql.junit.QueryTest" time="0.078"/>
+  <testcase name="Negation-06" classname="org.apache.jena.sparql.junit.QueryTest" time="0.122"/>
+  <testcase name="Negation-07" classname="org.apache.jena.sparql.junit.QueryTest" time="0.04"/>
+  <testcase name="Negation-08" classname="org.apache.jena.sparql.junit.QueryTest" time="0.062"/>
+  <testcase name="substitution-projection [JENA-707]" classname="org.apache.jena.sparql.junit.QueryTest" time="0.096"/>
+  <testcase name="syn-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.47"/>
+  <testcase name="syn-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.044"/>
+  <testcase name="syn-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.025"/>
+  <testcase name="syn-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.033"/>
+  <testcase name="syn-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.079"/>
+  <testcase name="syn-06.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syn-07.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.034"/>
+  <testcase name="syn-08.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.035"/>
+  <testcase name="syntax-basic-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.213"/>
+  <testcase name="syntax-basic-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.021"/>
+  <testcase name="syntax-basic-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.05"/>
+  <testcase name="syntax-basic-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.001"/>
+  <testcase name="syntax-basic-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.112"/>
+  <testcase name="syntax-basic-06.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.07"/>
+  <testcase name="syntax-bnode-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.081"/>
+  <testcase name="syntax-bnode-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.024"/>
+  <testcase name="syntax-bnode-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.02"/>
+  <testcase name="syntax-bnodes-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.054"/>
+  <testcase name="syntax-bnodes-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.015"/>
+  <testcase name="syntax-bnodes-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.001"/>
+  <testcase name="syntax-bnodes-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.08"/>
+  <testcase name="syntax-bnodes-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.059"/>
+  <testcase name="syntax-dataset-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.028"/>
+  <testcase name="syntax-dataset-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.003"/>
+  <testcase name="syntax-dataset-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.01"/>
+  <testcase name="syntax-dataset-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.017"/>
+  <testcase name="syntax-esc-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-esc-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.064"/>
+  <testcase name="syntax-esc-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.047"/>
+  <testcase name="syntax-esc-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.018"/>
+  <testcase name="syntax-esc-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.071"/>
+  <testcase name="syntax-expr-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.021"/>
+  <testcase name="syntax-expr-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.038"/>
+  <testcase name="syntax-expr-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.014"/>
+  <testcase name="syntax-expr-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.026"/>
+  <testcase name="syntax-expr-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.178"/>
+  <testcase name="syntax-form-ask-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.069"/>
+  <testcase name="syntax-form-construct01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.04"/>
+  <testcase name="syntax-form-construct02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.026"/>
+  <testcase name="syntax-form-construct03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.1"/>
+  <testcase name="syntax-form-construct04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.014"/>
+  <testcase name="syntax-form-construct06.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.035"/>
+  <testcase name="syntax-form-describe01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.088"/>
+  <testcase name="syntax-form-describe02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.018"/>
+  <testcase name="syntax-forms-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.018"/>
+  <testcase name="syntax-forms-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.008"/>
+  <testcase name="syntax-form-select-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.027"/>
+  <testcase name="syntax-form-select-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.098"/>
+  <testcase name="syntax-function-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.042"/>
+  <testcase name="syntax-function-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.013"/>
+  <testcase name="syntax-function-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.047"/>
+  <testcase name="syntax-function-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.05"/>
+  <testcase name="syntax-general-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.053"/>
+  <testcase name="syntax-general-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.062"/>
+  <testcase name="syntax-general-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.039"/>
+  <testcase name="syntax-general-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.022"/>
+  <testcase name="syntax-general-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.047"/>
+  <testcase name="syntax-general-06.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.069"/>
+  <testcase name="syntax-general-07.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.039"/>
+  <testcase name="syntax-general-08.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.03"/>
+  <testcase name="syntax-general-09.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.058"/>
+  <testcase name="syntax-general-10.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.041"/>
+  <testcase name="syntax-general-11.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.027"/>
+  <testcase name="syntax-general-12.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.022"/>
+  <testcase name="syntax-general-13.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.025"/>
+  <testcase name="syntax-general-14.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.059"/>
+  <testcase name="syntax-graph-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.043"/>
+  <testcase name="syntax-graph-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.036"/>
+  <testcase name="syntax-graph-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.068"/>
+  <testcase name="syntax-graph-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-graph-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.044"/>
+  <testcase name="syntax-keywords-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.236"/>
+  <testcase name="syntax-keywords-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.113"/>
+  <testcase name="syntax-keywords-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-limit-offset-08.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.026"/>
+  <testcase name="syntax-limit-offset-09.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.004"/>
+  <testcase name="syntax-limit-offset-10.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.136"/>
+  <testcase name="syntax-limit-offset-11.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.061"/>
+  <testcase name="syntax-lists-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.122"/>
+  <testcase name="syntax-lists-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.08"/>
+  <testcase name="syntax-lists-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.105"/>
+  <testcase name="syntax-lists-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.033"/>
+  <testcase name="syntax-lists-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.013"/>
+  <testcase name="syntax-lit-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.076"/>
+  <testcase name="syntax-lit-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.011"/>
+  <testcase name="syntax-lit-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.081"/>
+  <testcase name="syntax-lit-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.145"/>
+  <testcase name="syntax-lit-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.065"/>
+  <testcase name="syntax-lit-06.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.043"/>
+  <testcase name="syntax-lit-07.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.035"/>
+  <testcase name="syntax-lit-08.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.033"/>
+  <testcase name="syntax-lit-09.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.012"/>
+  <testcase name="syntax-lit-10.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.042"/>
+  <testcase name="syntax-lit-11.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.085"/>
+  <testcase name="syntax-lit-12.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-lit-13.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-lit-14.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.058"/>
+  <testcase name="syntax-lit-15.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.019"/>
+  <testcase name="syntax-lit-16.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.153"/>
+  <testcase name="syntax-lit-17.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.039"/>
+  <testcase name="syntax-lit-18.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-lit-19.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.023"/>
+  <testcase name="syntax-lit-20.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.042"/>
+  <testcase name="syntax-order-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.021"/>
+  <testcase name="syntax-order-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.04"/>
+  <testcase name="syntax-order-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-order-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.034"/>
+  <testcase name="syntax-order-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.088"/>
+  <testcase name="syntax-order-06.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.033"/>
+  <testcase name="syntax-order-07.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.107"/>
+  <testcase name="syntax-order-08.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.056"/>
+  <testcase name="syntax-order-09.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.062"/>
+  <testcase name="syntax-pat-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.021"/>
+  <testcase name="syntax-pat-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.009"/>
+  <testcase name="syntax-pat-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-pat-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.059"/>
+  <testcase name="syntax-path-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-path-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.019"/>
+  <testcase name="syntax-path-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-path-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.042"/>
+  <testcase name="syntax-path-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.02"/>
+  <testcase name="syntax-path-06.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.044"/>
+  <testcase name="syntax-qname-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.013"/>
+  <testcase name="syntax-qname-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.063"/>
+  <testcase name="syntax-qname-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.06"/>
+  <testcase name="syntax-qname-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.014"/>
+  <testcase name="syntax-qname-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.003"/>
+  <testcase name="syntax-qname-06.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.06"/>
+  <testcase name="syntax-qname-07.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.053"/>
+  <testcase name="syntax-qname-08.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.024"/>
+  <testcase name="syntax-struct-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.071"/>
+  <testcase name="syntax-struct-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.001"/>
+  <testcase name="syntax-struct-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.001"/>
+  <testcase name="syntax-struct-05.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.005"/>
+  <testcase name="syntax-struct-06.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-struct-07.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.001"/>
+  <testcase name="syntax-struct-08.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.016"/>
+  <testcase name="syntax-struct-09.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.038"/>
+  <testcase name="syntax-struct-10.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-struct-11.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.018"/>
+  <testcase name="syntax-struct-12.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.023"/>
+  <testcase name="syntax-struct-13.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-struct-14.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.027"/>
+  <testcase name="syntax-subselect-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.025"/>
+  <testcase name="syntax-subselect-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+  <testcase name="syntax-subselect-03.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.026"/>
+  <testcase name="syntax-subselect-04.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.03"/>
+  <testcase name="syntax-union-01.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.029"/>
+  <testcase name="syntax-union-02.rq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.035"/>
+  <testcase name="syntax-assign-01.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.003"/>
+  <testcase name="syntax-assign-02.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.029"/>
+  <testcase name="syntax-count-01.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.021"/>
+  <testcase name="syntax-count-02.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.015"/>
+  <testcase name="syntax-count-03.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.01"/>
+  <testcase name="syntax-count-04.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.029"/>
+  <testcase name="syntax-group-01.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.015"/>
+  <testcase name="syntax-group-02.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.026"/>
+  <testcase name="syntax-select-expr-01.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.017"/>
+  <testcase name="syntax-select-expr-02.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.033"/>
+  <testcase name="syntax-select-expr-03.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.054"/>
+  <testcase name="syntax-service-01.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.059"/>
+  <testcase name="syntax-subselect-10.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.022"/>
+  <testcase name="syntax-subselect-11.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.008"/>
+  <testcase name="syntax-subselect-12.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.001"/>
+  <testcase name="syntax-subselect-13.arq" classname="org.apache.jena.sparql.junit.TestSerialization" time="0.002"/>
+</testsuite>

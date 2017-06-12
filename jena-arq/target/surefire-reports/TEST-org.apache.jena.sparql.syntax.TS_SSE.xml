@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.sparql.syntax.TS_SSE" time="0.064" tests="127" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testSymbol_1" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testSymbol_2" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testTypedLit_1" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testTypedLit_2" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testTypedLit_3" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNil_1" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNil_2" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNil_3" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNil_4" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNum_1" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNum_2" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNum_3" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNum_4" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNum_5" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testURI_1" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testURI_2" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testURI_3" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testWS_1" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testWS_2" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseList_01" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseList_02" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseList_03" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseList_04" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseList_05" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseList_06" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseList_07" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseList_08" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseSymbol_01" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseSymbol_02" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseSymbol_04" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0.001"/>
+  <testcase name="testMisc_01" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testMisc_02" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testMisc_10" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0.001"/>
+  <testcase name="testMisc_11" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testMisc_12" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testTaggedList_1" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testTaggedList_2" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testList_1" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testList_2" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testList_3" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testList_4" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testList_5" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testList_6" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testList_7" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_01" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_02" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_03" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_04" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_05" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_06" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_07" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_08" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_09" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_10" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_11" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_12" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testLit_13" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNode_1" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNode_2" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNum_01" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNum_02" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0.001"/>
+  <testcase name="testNum_03" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNum_04" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testNum_05" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testVar_01" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testVar_02" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testVar_03" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testVar_04" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testVar_05" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testVar_06" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testVar_07" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0.001"/>
+  <testcase name="testVar_08" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testVar_09" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testVar_10" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testVar_11" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0.002"/>
+  <testcase name="testParse_10" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseTerm_01" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0.001"/>
+  <testcase name="testParseTerm_02" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testParseTerm_03" classname="org.apache.jena.sparql.syntax.TestSSE_Basic" time="0"/>
+  <testcase name="testForm_01" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testForm_02" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testTypedLit_r1" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testBase_01" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0.001"/>
+  <testcase name="testBase_02" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testBase_03" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testBase_04" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0.001"/>
+  <testcase name="testBase_05" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0.005"/>
+  <testcase name="testBase_06" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testBase_07" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testPrefix_01" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testPrefix_02" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testPrefix_03" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testPrefix_04" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testPrefix_05" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testBasePrefix_01" classname="org.apache.jena.sparql.syntax.TestSSE_Forms" time="0"/>
+  <testcase name="testBuildExpr_01" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildExpr_02" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildExpr_03" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildExpr_04" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildExpr_05" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildExpr_06" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildExpr_07" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0.002"/>
+  <testcase name="testBuildExpr_08" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildExpr_09" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildExpr_10" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildExpr_11" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0.016"/>
+  <testcase name="testBuildExpr_12" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0.012"/>
+  <testcase name="testBuildExpr_13" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildExpr_14" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0.001"/>
+  <testcase name="test_01" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="test_02" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="test_03" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="test_04" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="test_05" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="test_06" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="test_07" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="test_08" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0.001"/>
+  <testcase name="testOp_01" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testOp_02" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testOp_03" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testOp_04" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildLong_01" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildLong_02" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildLong_03" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildInt_01" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildInt_02" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+  <testcase name="testBuildInt_03" classname="org.apache.jena.sparql.syntax.TestSSE_Builder" time="0"/>
+</testsuite>

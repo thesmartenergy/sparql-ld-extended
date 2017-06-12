@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.sparql.algebra.TS_Algebra" time="0.44" tests="189" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="translate_01" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.057"/>
+  <testcase name="translate_02" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="translate_03" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.002"/>
+  <testcase name="translate_04" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="translate_05" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.002"/>
+  <testcase name="translate_06" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="translate_07" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="translate_08" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="translate_09" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="translate_10" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="translate_11" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="translate_20" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="translate_21" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0"/>
+  <testcase name="translate_22" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="translate_23" classname="org.apache.jena.sparql.algebra.TestAlgebraTranslate" time="0.001"/>
+  <testcase name="testClassify_Join_14a" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.009"/>
+  <testcase name="testClassify_Join_14b" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_01" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_02" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_03" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_04" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_Join_05" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_06" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_07" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_Join_08" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_09" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_10" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_11" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_12" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_Join_13" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_14" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_15" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_20" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_21" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_Join_31" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_32" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_33" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_Join_34" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_35" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_41" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.003"/>
+  <testcase name="testClassify_Join_42" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_43" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_44" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_Join_45" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_50" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_Join_51" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_LeftJoin_01" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_LeftJoin_02" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_LeftJoin_03" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_LeftJoin_04" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_LeftJoin_05" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_LeftJoin_06" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_LeftJoin_07" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_LeftJoin_10" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_LeftJoin_11" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_LeftJoin_12" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_LeftJoin_13" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testClassify_LeftJoin_14" classname="org.apache.jena.sparql.algebra.TestClassify" time="0.001"/>
+  <testcase name="testClassify_LeftJoin_15" classname="org.apache.jena.sparql.algebra.TestClassify" time="0"/>
+  <testcase name="testExtendInService" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.159"/>
+  <testcase name="testGraphClauseUri" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testQuadPatternInGraph" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.004"/>
+  <testcase name="testCountGroup" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.003"/>
+  <testcase name="testQuadPatternInDefaultGraph" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testAggregatesInSubQuery1" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.016"/>
+  <testcase name="testAggregatesInSubQuery2" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testAggregatesInSubQuery3" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.002"/>
+  <testcase name="testExtend1" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testExtend2" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testExtend3" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.002"/>
+  <testcase name="testExtend4" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testNestedBind" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testCountGroupAs" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testGroupExpression" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testBasic01" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testBasic02" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testBasic03" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testBasic04" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testBasic05" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testGroupWithExpression" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.011"/>
+  <testcase name="testSubQuery_01" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testSubQuery_02" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testSubQuery_03" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testSubQuery_04" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testSubQuery_05" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testNestedProject" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testProject1" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testProject2" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testValues1" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testValues2" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testPathExpressions1" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.009"/>
+  <testcase name="testPathExpressions2" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.014"/>
+  <testcase name="testSubQuery1" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testSubQuery2" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testSubQuery3" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testGraphClauseComplex" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.002"/>
+  <testcase name="testModifiersOnSubQuery1" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testModifiersOnSubQuery2" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testModifiersOnSubQuery3" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testModifiersOnSubQuery4" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testGroupBy_01" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testGroupBy_02" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testGroupBy_03" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testGroupBy_04" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testGroupBy_05" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testGroupBy_06" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testGroupBy_07" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testGroupBy_08" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testGroupBy_09" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testGroupBy_10" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.005"/>
+  <testcase name="testGroupBy_11" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testGroupBy_12" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testAlgebra01" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testAlgebra02" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testAlgebra03" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testOptional01" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testOptional02" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testOptional03" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testOptional04" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testNestedProjectWithGroup" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testQuadPatternInGraphComplex01" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="testQuadPatternInGraphComplex02" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testMinus1" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testMinus2" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testDoubleCount" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0.001"/>
+  <testcase name="testCountStar" classname="org.apache.jena.sparql.algebra.TestOpAsQuery" time="0"/>
+  <testcase name="opvars_01" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0.001"/>
+  <testcase name="opvars_02" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0"/>
+  <testcase name="opvars_03" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0"/>
+  <testcase name="opvars_04" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0"/>
+  <testcase name="opvars_05" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0"/>
+  <testcase name="opvars_06" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0"/>
+  <testcase name="opvars_10" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0.001"/>
+  <testcase name="opvars_11" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0"/>
+  <testcase name="opvars_12" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0"/>
+  <testcase name="opvars_13" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0"/>
+  <testcase name="opvars_14" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0"/>
+  <testcase name="opvars_15" classname="org.apache.jena.sparql.algebra.TestOpVars" time="0"/>
+  <testcase name="qp2join_01" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0.014"/>
+  <testcase name="qp2join_02" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0.008"/>
+  <testcase name="qp2join_03" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0.001"/>
+  <testcase name="qp2join_04" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0.001"/>
+  <testcase name="qp2join_05" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0"/>
+  <testcase name="qp2join_06" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0.001"/>
+  <testcase name="qp2join_07" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0"/>
+  <testcase name="bgp2join_01" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0.001"/>
+  <testcase name="bgp2join_02" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0"/>
+  <testcase name="bgp2join_03" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0"/>
+  <testcase name="bgp2join_04" classname="org.apache.jena.sparql.algebra.TestPattern2Join" time="0"/>
+  <testcase name="quads01" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0"/>
+  <testcase name="quads02" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0"/>
+  <testcase name="quads03" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads04" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads05" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0"/>
+  <testcase name="quads10" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.002"/>
+  <testcase name="quads11" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0"/>
+  <testcase name="quads20" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads21" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads30" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.002"/>
+  <testcase name="quads31" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads32" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads33" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0"/>
+  <testcase name="quads34" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads35" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads36" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads37" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads38" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0"/>
+  <testcase name="quads39" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads40" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="quads41" classname="org.apache.jena.sparql.algebra.TestTransformQuads" time="0.001"/>
+  <testcase name="varfind_01_1" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_01_2" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_01_3" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_01_4" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_02_1" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0.001"/>
+  <testcase name="varfind_02_2" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_02_3" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_02_4" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_03_1" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_03_2" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_03_3" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_03_4" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0.001"/>
+  <testcase name="varfind_03_5" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_04_1" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_04_2" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_04_3" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0.001"/>
+  <testcase name="varfind_04_4" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="varfind_04_5" classname="org.apache.jena.sparql.algebra.TestVarFinder" time="0"/>
+  <testcase name="textOpExtQuads" classname="org.apache.jena.sparql.algebra.TestTransformOpExt" time="0.009"/>
+</testsuite>

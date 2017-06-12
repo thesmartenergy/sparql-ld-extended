@@ -1,0 +1,53 @@
+@prefix seas: <https://w3id.org/seas/> .
+@prefix sosa: <http://www.w3c.org/ns/sosa/> .
+@prefix ssn: <http://www.w3c.org/ns/ssn/> .
+@prefix ex: <http://example.org/data/> .
+
+<room/1> a seas:Room , sosa:FeatureOfInterest ;
+  ssn:hasProperty <room/1#temperature>;
+  seas:onFloor 1 .
+
+<room/2> a seas:Room , sosa:FeatureOfInterest ;
+  ssn:hasProperty <room/2#temperature> , <room/2#occupancy> ;
+  seas:onFloor 2 ;
+  ex:endpoint <http://localhost:8001/endpoint_AirCon1.json> ;
+  ex:liftingrule <http://localhost:8001/liftingrule_AirCon.rqg> .
+
+<room/1#temperature> a sosa:ObservableProperty , seas:TemperatureProperty .
+<room/2#temperature> a sosa:ObservableProperty , seas:TemperatureProperty .
+<room/2#occupancy> a sosa:ObservableProperty , seas:OccupancyProperty .
+
+<AirCon/1> sosa:observes <room/2#temperature>, <room/2#occupancy> ;
+ ex:exposes """
+    ?temp_obs a sosa:Observation ;
+      sosa:hasFeatureOfInterest ?room ;
+      sosa:observedProperty ?temperature ;
+      sosa:hasSimpleResult ?temp_value .
+
+    ?occ_obs a sosa:Observation ;
+      sosa:hasFeatureOfInterest ?room ;
+      sosa:observedProperty ?occupancy ;
+      sosa:hasSimpleResult ?occ_value .
+  """ ;
+  ex:endpoint <http://localhost:8001/endpoint_AirCon1.jsonld> ;
+  ex:liftingrule <http://localhost:8001/liftingrule_AirCon.rqg> .
+
+<Heater/2> sosa:observes <room/2#temperature> ;
+ ex:exposes """
+    ?temp_obs a sosa:Observation ;
+      sosa:hasFeatureOfInterest ?room ;
+      sosa:observedProperty ?temperature ;
+      sosa:hasSimpleResult ?temp_value .
+  """ ;
+  ex:endpoint <http://localhost:8001/endpoint_Heater2.jsonld> ;
+  ex:liftingrule <http://localhost:8001/liftingrule_Heater.rqg> .
+
+<Heater/1> sosa:observes <room/2#temperature> ;
+  ex:exposes """
+    ?temp_obs a sosa:Observation ;
+      sosa:hasFeatureOfInterest ?room ;
+      sosa:observedProperty ?temperature ;
+      sosa:hasSimpleResult ?temp_value .
+  """ ;
+  ex:endpoint <http://localhost:8001/endpoint_Heater1.jsonld> ;
+  ex:liftingrule <http://localhost:8001/liftingrule_Heater.rqg> .

@@ -1,0 +1,23 @@
+BASE <http://example.org/>
+PREFIX seas: <https://w3id.org/seas/>
+PREFIX sosa: <http://www.w3c.org/ns/sosa/>
+PREFIX ssn: <http://www.w3c.org/ns/ssn/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sgfn: <http://w3id.org/sparql-generate/fn/>
+
+GENERATE {
+  ?room a seas:Room, sosa:FeatureOfInterest;
+    ssn:hasProperty ?property_t ;
+    ssn:hasProperty ?property_occ ;
+    seas:onFloor ?floor ;
+    sosa:hasSimpleResult ?temp_value ;
+    sosa:hasSimpleResult ?occ_value ;
+}
+WHERE {
+  BIND( sgfn:JSONPath(?source, "$.loc" ) AS ?room)
+  BIND( sgfn:JSONPath(?source, "$.p1" ) AS ?property_t)
+  BIND( sgfn:JSONPath(?source, "$.temp" ) AS ?temp_value )
+  BIND( sgfn:JSONPath(?source, "$.f" ) AS ?floor)
+  BIND( sgfn:JSONPath(?source, "$.p2" ) AS ?property_occ)
+  BIND( sgfn:JSONPath(?source, "$.occ" ) AS ?occ_value )
+}

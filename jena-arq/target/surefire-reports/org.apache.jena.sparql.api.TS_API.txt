@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.sparql.api.TS_API
+-------------------------------------------------------------------------------
+Tests run: 55, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 2.936 sec <<< FAILURE! - in org.apache.jena.sparql.api.TS_API
+testARQConstructQuad_Prefix(org.apache.jena.sparql.api.TestAPI)  Time elapsed: 0.035 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.api.TestAPI.testARQConstructQuad_Prefix(TestAPI.java:484)
+
+testARQConstructQuad_bnodes(org.apache.jena.sparql.api.TestAPI)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.api.TestAPI.testARQConstructQuad_bnodes(TestAPI.java:417)
+
+testARQConstructQuad_Duplicate_1(org.apache.jena.sparql.api.TestAPI)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.api.TestAPI.testARQConstructQuad_Duplicate_1(TestAPI.java:433)
+
+testARQConstructQuad_Duplicate_2(org.apache.jena.sparql.api.TestAPI)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.api.TestAPI.testARQConstructQuad_Duplicate_2(TestAPI.java:451)
+
+testARQConstructQuad_Duplicate_3(org.apache.jena.sparql.api.TestAPI)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.api.TestAPI.testARQConstructQuad_Duplicate_3(TestAPI.java:466)
+
+testARQConstructQuad_ShortForm_2(org.apache.jena.sparql.api.TestAPI)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.api.TestAPI.testARQConstructQuad_ShortForm_2(TestAPI.java:521)
+
+testARQConstructQuad_ShortForm_3(org.apache.jena.sparql.api.TestAPI)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.api.TestAPI.testARQConstructQuad_ShortForm_3(TestAPI.java:535)
+
+testARQConstructQuad_a_2(org.apache.jena.sparql.api.TestAPI)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.api.TestAPI.testARQConstructQuad_a_2(TestAPI.java:382)
+
+testARQConstructQuad_b_2(org.apache.jena.sparql.api.TestAPI)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.apache.jena.sparql.api.TestAPI.testARQConstructQuad_b_2(TestAPI.java:358)
+

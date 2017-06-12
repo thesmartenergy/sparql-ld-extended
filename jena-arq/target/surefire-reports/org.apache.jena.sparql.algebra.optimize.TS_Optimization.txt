@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.sparql.algebra.optimize.TS_Optimization
+-------------------------------------------------------------------------------
+Tests run: 419, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.62 sec - in org.apache.jena.sparql.algebra.optimize.TS_Optimization

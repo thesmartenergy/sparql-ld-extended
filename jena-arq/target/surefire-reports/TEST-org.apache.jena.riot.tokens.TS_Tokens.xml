@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.riot.tokens.TS_Tokens" time="0.049" tests="150" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="tokenUnit_syntax1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_syntax2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_bNode1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_bNode2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_bNode3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_bNode4" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_bNode5" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_bNode6" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.001"/>
+  <testcase name="tokenUnit_25" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="directive_1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="directive_2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="directive_3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname4" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname5" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname6" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname7" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname8" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname9" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralDT_0" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralDT_1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralDT_2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralDT_3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="token_multiple" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname10" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname11" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname12" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname13" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname14" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname15" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname16" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname17" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname18" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_pname19" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralLang_0" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.004"/>
+  <testcase name="tokenLiteralLang_1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralLang_2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralLang_3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralLang_4" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralLang_5" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralLang_6" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralLang_7" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralLang_8" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenizer_symbol_02" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenizer_symbol_03" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenizer_symbol_05" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenizer_symbol_06" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenizer_symbol_11" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenizer_symbol_12" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenWord_01" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenComment_01" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenComment_02" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenComment_03" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="token_newlines_1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="token_newlines_2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="token_newlines_3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="token_newlines_4" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_hex1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_hex2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_hex3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_hex4" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri4" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri5" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri6" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num4" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num5" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num6" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num7" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num8" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.008"/>
+  <testcase name="tokenUnit_num9" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.001"/>
+  <testcase name="tokenUnit_str1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str4" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str5" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str6" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.001"/>
+  <testcase name="tokenUnit_str7" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str8" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str9" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_var1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_var2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.001"/>
+  <testcase name="tokenUnit_var3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_var4" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_var5" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_var6" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str_long10" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str_long11" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str_long12" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.001"/>
+  <testcase name="tokenLiteralLang_bad_1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralLang_bad_2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str_long1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str_long2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.001"/>
+  <testcase name="tokenUnit_str_long3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str_long4" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str_long5" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str_long6" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str_long7" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.004"/>
+  <testcase name="tokenUnit_str_long8" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str_long9" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenizer_BOM_1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.001"/>
+  <testcase name="tokenUnit_symbol_11" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_symbol_12" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_symbol_13" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_symbol_14" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_symbol_15" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_symbol_16" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_symbol_17" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_symbol_18" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri10" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri11" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.001"/>
+  <testcase name="tokenUnit_iri12" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri13" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri14" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.001"/>
+  <testcase name="tokenUnit_iri15" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri16" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri17" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri18" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri19" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri20" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri21" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0.001"/>
+  <testcase name="tokenUnit_iri22" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_iri23" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num10" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num11" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_num12" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str10" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenUnit_str11" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenizer_charset_1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenizer_charset_2" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenizer_charset_3" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenLiteralDT_bad_1" classname="org.apache.jena.riot.tokens.TestTokenizer" time="0"/>
+  <testcase name="tokenForNode01" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0.001"/>
+  <testcase name="tokenForNode02" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0"/>
+  <testcase name="tokenForNode03" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0"/>
+  <testcase name="tokenForNode04" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0"/>
+  <testcase name="tokenForNode05" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0"/>
+  <testcase name="tokenForNode06" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0"/>
+  <testcase name="tokenForNode07" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0"/>
+  <testcase name="tokenForNode08" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0"/>
+  <testcase name="tokenForNode20" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0.001"/>
+  <testcase name="tokenForNode21" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0"/>
+  <testcase name="tokenForNode22" classname="org.apache.jena.riot.tokens.TestTokenForNode" time="0"/>
+</testsuite>

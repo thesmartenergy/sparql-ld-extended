@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.riot.writer.TS_RiotWriter" time="2.063" tests="695" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="registration_01" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_02" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0.001"/>
+  <testcase name="registration_03" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_04" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_05" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_06" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_07" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_08" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_09" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_10" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_11" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_20" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_21" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_22" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_23" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_24" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0.001"/>
+  <testcase name="registration_25" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_26" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_27" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_28" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_29" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_30" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_31" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_32" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_33" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_34" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_35" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_36" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_25a" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_25b" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_26a" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="registration_26b" classname="org.apache.jena.riot.writer.TestWriterRegistration" time="0"/>
+  <testcase name="writer00[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.021"/>
+  <testcase name="writer01[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.009"/>
+  <testcase name="writer02[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer03[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer05[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer06[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer07[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer08[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer10[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer12[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer13[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer14[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer15[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer16[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer17[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer01[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer03[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer05[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer06[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer07[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer08[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer12[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer13[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer15[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer16[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer17[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[1: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.017"/>
+  <testcase name="writer01[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer03[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer05[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer06[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer08[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer09[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer10[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer11[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer12[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer15[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer16[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer17[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[2: N-Triples/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer01[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer03[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer05[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer06[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer08[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer10[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer12[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer15[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer16[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[3: N-Triples/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.039"/>
+  <testcase name="writer01[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer03[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer04[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer05[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer06[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer08[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer09[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer11[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer12[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer15[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer16[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer17[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.011"/>
+  <testcase name="writer18[4: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer00[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer01[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer03[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer04[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer05[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer06[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer08[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer09[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer11[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer12[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer14[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer15[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer16[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[5: Turtle/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer00[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.03"/>
+  <testcase name="writer01[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer03[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer05[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer06[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer08[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer09[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer10[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer12[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer15[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer16[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer17[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer18[6: Turtle/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer00[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.013"/>
+  <testcase name="writer01[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer03[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer05[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer06[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer07[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer08[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer10[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer12[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer15[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer16[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[7: Turtle/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.063"/>
+  <testcase name="writer01[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer02[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer03[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer04[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.018"/>
+  <testcase name="writer05[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer06[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.006"/>
+  <testcase name="writer07[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer08[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer09[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer10[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer11[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer12[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer13[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer14[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer15[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer16[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer17[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer18[8: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer00[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer01[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer02[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer03[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer04[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer05[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.008"/>
+  <testcase name="writer06[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer07[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.006"/>
+  <testcase name="writer08[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.014"/>
+  <testcase name="writer09[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer10[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.008"/>
+  <testcase name="writer11[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer12[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer13[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer14[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer15[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer16[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer17[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer18[9: RDF/XML/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer00[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer01[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer02[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer03[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer04[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer05[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer06[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer07[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer08[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer09[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer10[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer11[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer12[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer13[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer14[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer15[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer16[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer17[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer18[10: RDF/XML/plain]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer00[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer01[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer02[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer03[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer04[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer05[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer06[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.02"/>
+  <testcase name="writer07[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer08[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.018"/>
+  <testcase name="writer09[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.006"/>
+  <testcase name="writer10[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer11[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.007"/>
+  <testcase name="writer12[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer14[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.006"/>
+  <testcase name="writer15[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer16[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer17[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer18[11: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer00[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer01[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.006"/>
+  <testcase name="writer03[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer04[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.012"/>
+  <testcase name="writer05[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer06[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer07[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer08[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer09[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer10[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer11[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer12[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer14[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer15[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer16[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer18[12: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer00[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer01[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer03[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer04[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer05[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer06[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer07[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer08[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer09[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer10[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer11[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer12[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer13[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer14[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer15[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer16[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer17[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer18[13: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer00[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer01[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer03[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer04[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer05[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer06[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer08[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer12[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer14[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer15[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer16[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer18[14: RDF/JSON]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.014"/>
+  <testcase name="writer01[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer03[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer04[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer05[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer06[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer07[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer08[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer09[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer11[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer12[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer13[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer14[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer15[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer16[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[15: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer00[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer01[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer02[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer03[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer05[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer06[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer08[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer12[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer15[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer16[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer18[16: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.013"/>
+  <testcase name="writer01[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer03[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer05[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer06[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer08[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer12[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer13[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer15[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer16[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer17[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[17: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer00[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.015"/>
+  <testcase name="writer01[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer03[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer05[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer06[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer08[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer12[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer13[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer15[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer16[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer17[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer18[18: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer01[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer03[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer05[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer06[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer07[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer08[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer10[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer12[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer13[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer15[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer16[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer17[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[19: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer01[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer03[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer04[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer05[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer06[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer08[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer12[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer13[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer14[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer15[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer16[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[20: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer01[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer03[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer05[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer06[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer07[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer08[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer09[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer10[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer11[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer12[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer14[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer15[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0"/>
+  <testcase name="writer16[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer17[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[21: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer00[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.014"/>
+  <testcase name="writer01[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer03[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer04[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer05[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer06[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer07[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer08[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer09[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer11[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer12[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer14[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer15[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer16[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer18[22: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer00[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.004"/>
+  <testcase name="writer01[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer02[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer03[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer04[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer05[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer06[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer07[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer08[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.005"/>
+  <testcase name="writer09[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer11[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer12[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer13[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer14[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer15[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer16[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer18[23: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer00[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.014"/>
+  <testcase name="writer01[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer02[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer03[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.001"/>
+  <testcase name="writer04[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer05[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer06[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer07[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer08[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer09[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer10[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer11[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer12[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer13[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer14[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer15[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.003"/>
+  <testcase name="writer16[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer17[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer18[24: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterGraph" time="0.002"/>
+  <testcase name="writer00[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.017"/>
+  <testcase name="writer01[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.01"/>
+  <testcase name="writer02[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer03[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.006"/>
+  <testcase name="writer04[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer05[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer06[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer07[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer08[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer09[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer10[0: rdf/null]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer00[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer01[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.006"/>
+  <testcase name="writer02[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.007"/>
+  <testcase name="writer03[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.031"/>
+  <testcase name="writer04[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer05[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer06[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer07[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer08[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.016"/>
+  <testcase name="writer09[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer10[1: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer00[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer01[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer02[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer03[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.023"/>
+  <testcase name="writer04[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer05[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer06[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer07[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer08[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.02"/>
+  <testcase name="writer09[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer10[2: TriG/pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer00[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer01[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer02[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer03[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.008"/>
+  <testcase name="writer04[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer05[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer06[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer07[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer08[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer09[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer10[3: TriG/blocks]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer00[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer01[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer02[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer03[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer04[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer05[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer06[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer07[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer08[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer09[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer10[4: TriG/flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer00[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer01[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer02[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.006"/>
+  <testcase name="writer03[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.01"/>
+  <testcase name="writer04[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer05[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer06[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer07[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer08[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0"/>
+  <testcase name="writer09[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer10[5: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer00[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer01[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer02[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer03[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.009"/>
+  <testcase name="writer04[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer05[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer06[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer07[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer08[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0"/>
+  <testcase name="writer09[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer10[6: JSON-LD/compact pretty]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer00[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer01[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer02[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer03[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.008"/>
+  <testcase name="writer04[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer05[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer06[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer07[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer08[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0"/>
+  <testcase name="writer09[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer10[7: JSON-LD/compact flat]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer00[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer01[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer02[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer03[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer04[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer05[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer06[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer07[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer08[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer09[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer10[8: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer00[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer01[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer02[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer03[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.007"/>
+  <testcase name="writer04[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer05[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer06[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer07[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer08[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer09[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer10[9: N-Quads/utf-8]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer00[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer01[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer02[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer03[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer04[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer05[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer06[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer07[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer08[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer09[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer10[10: N-Quads/ascii]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer00[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer01[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer02[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer03[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.006"/>
+  <testcase name="writer04[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer05[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer06[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer07[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer08[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer09[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer10[11: RDF-THRIFT]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer00[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer01[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer02[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer03[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.005"/>
+  <testcase name="writer04[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer05[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer06[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer07[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.001"/>
+  <testcase name="writer08[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer09[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer10[12: RDF-THRIFT/Value]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer00[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer01[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer02[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer03[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.008"/>
+  <testcase name="writer04[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer05[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer06[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer07[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="writer08[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.004"/>
+  <testcase name="writer09[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.003"/>
+  <testcase name="writer10[13: TriX]" classname="org.apache.jena.riot.writer.TestRiotWriterDataset" time="0.002"/>
+  <testcase name="rdfjson_literals" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.019"/>
+  <testcase name="rdfjson_00" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.001"/>
+  <testcase name="rdfjson_01" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.001"/>
+  <testcase name="rdfjson_02" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.001"/>
+  <testcase name="rdfjson_03" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.001"/>
+  <testcase name="rdfjson_04" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.001"/>
+  <testcase name="rdfjson_05" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.002"/>
+  <testcase name="rdfjson_06" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.001"/>
+  <testcase name="rdfjson_07" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.001"/>
+  <testcase name="rdfjson_08" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.001"/>
+  <testcase name="rdfjson_09" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.001"/>
+  <testcase name="rdfjson_escapes" classname="org.apache.jena.riot.writer.TestRDFJSON" time="0.001"/>
+  <testcase name="bnode_cycles_01" classname="org.apache.jena.riot.writer.TestTurtleWriter" time="0.002"/>
+  <testcase name="bnode_cycles_02" classname="org.apache.jena.riot.writer.TestTurtleWriter" time="0.001"/>
+  <testcase name="bnode_cycles_03" classname="org.apache.jena.riot.writer.TestTurtleWriter" time="0.001"/>
+  <testcase name="bnode_cycles_04" classname="org.apache.jena.riot.writer.TestTurtleWriter" time="0.001"/>
+  <testcase name="bnode_cycles_05" classname="org.apache.jena.riot.writer.TestTurtleWriter" time="0.001"/>
+  <testcase name="bnode_cycles_06" classname="org.apache.jena.riot.writer.TestTurtleWriter" time="0"/>
+  <testcase name="bnode_cycles_07" classname="org.apache.jena.riot.writer.TestTurtleWriter" time="0.001"/>
+  <testcase name="bnode_cycles_08" classname="org.apache.jena.riot.writer.TestTurtleWriter" time="0.001"/>
+  <testcase name="bnode_cycles" classname="org.apache.jena.riot.writer.TestTurtleWriter" time="0.012"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-01.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.002"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-02.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.002"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-03.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.001"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-04.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.001"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-05.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.015"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-06.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.008"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-10.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.014"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-11.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.004"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-12.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.004"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-13.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.01"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-14.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.004"/>
+  <testcase name="trix_writer[testing/RIOT/Lang/TriX/trix-15.trix]" classname="org.apache.jena.riot.writer.TestTriXWriter" time="0.009"/>
+  <testcase name="propertiesAbbrev" classname="org.apache.jena.riot.writer.TestWriteRDFXML" time="0.003"/>
+</testsuite>

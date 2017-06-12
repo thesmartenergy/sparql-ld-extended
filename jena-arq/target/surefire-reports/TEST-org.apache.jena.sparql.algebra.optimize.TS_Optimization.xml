@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.sparql.algebra.optimize.TS_Optimization" time="1.62" tests="419" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="reorderbgp_1_1" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0.058"/>
+  <testcase name="reorderbgp_1_2" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0.001"/>
+  <testcase name="reorderbgp_2_1" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0.035"/>
+  <testcase name="reorderbgp_2_2" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0.001"/>
+  <testcase name="reorderbgp_2_3" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0"/>
+  <testcase name="reorderbgp_2_4" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0"/>
+  <testcase name="reorderbgp_3_1" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0.001"/>
+  <testcase name="reorderbgp_3_2" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0"/>
+  <testcase name="reorderbgp_3_3" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0.001"/>
+  <testcase name="reorderbgp_3_4" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0"/>
+  <testcase name="reorderbgp_3_5" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0.001"/>
+  <testcase name="reorderbgp_3_6" classname="org.apache.jena.sparql.algebra.optimize.TestReorderBGP" time="0"/>
+  <testcase name="rename_reverse_01" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.047"/>
+  <testcase name="rename_reverse_02" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.11"/>
+  <testcase name="query_rename_01" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.032"/>
+  <testcase name="query_rename_02" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="query_rename_03" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.002"/>
+  <testcase name="query_rename_04" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.002"/>
+  <testcase name="query_rename_05" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.002"/>
+  <testcase name="query_rename_06" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="query_rename_07" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="rename_X_01" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.038"/>
+  <testcase name="rename_X_02" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.02"/>
+  <testcase name="rename_X_03" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="rename_X_04" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.002"/>
+  <testcase name="rename_X_05" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="rename_X_06" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="rename_X_07" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0"/>
+  <testcase name="rename_X_08" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="renameExpr_01" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0"/>
+  <testcase name="renameExpr_02" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0"/>
+  <testcase name="rename_X_02a" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="filter_not_exists_scoping_03" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.027"/>
+  <testcase name="filter_not_exists_scoping_04" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="rename_01" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="rename_02" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0"/>
+  <testcase name="rename_03" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="rename_04" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0"/>
+  <testcase name="rename_05" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.011"/>
+  <testcase name="rename_06" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.009"/>
+  <testcase name="rename_07" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="rename_08" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0"/>
+  <testcase name="rename_09" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0"/>
+  <testcase name="rename_10" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="rename_11" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0"/>
+  <testcase name="rename_12" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.001"/>
+  <testcase name="rename_13" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.014"/>
+  <testcase name="rename_14" classname="org.apache.jena.sparql.algebra.optimize.TestVarRename" time="0.002"/>
+  <testcase name="distinct_order_by_application_01" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.062"/>
+  <testcase name="distinct_order_by_application_03" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0"/>
+  <testcase name="distinct_order_by_application_04" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.018"/>
+  <testcase name="distinct_order_by_application_05" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.013"/>
+  <testcase name="distinct_order_by_application_06" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="reduced_order_by_application_01" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="reduced_order_by_application_02" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.002"/>
+  <testcase name="distinct_to_reduced_01" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.008"/>
+  <testcase name="distinct_to_reduced_02" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="distinct_to_reduced_03" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="distinct_to_reduced_04" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="distinct_to_reduced_05" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0"/>
+  <testcase name="distinct_to_reduced_06" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="distinct_to_reduced_07" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="distinct_to_reduced_08" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="distinct_to_reduced_09" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="distinct_to_reduced_10" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="distinct_to_reduced_11" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0"/>
+  <testcase name="distinct_to_reduced_12" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="distinct_to_reduced_13" classname="org.apache.jena.sparql.algebra.optimize.TestOptDistinctReduced" time="0.001"/>
+  <testcase name="implicitLeftJoinEvaluation1" classname="org.apache.jena.sparql.algebra.optimize.TestSemanticEquivalence" time="0.299"/>
+  <testcase name="implicitLeftJoinEvaluation2" classname="org.apache.jena.sparql.algebra.optimize.TestSemanticEquivalence" time="0.063"/>
+  <testcase name="implicitLeftJoinEvaluation3" classname="org.apache.jena.sparql.algebra.optimize.TestSemanticEquivalence" time="0.022"/>
+  <testcase name="implicitJoinEvaluation1" classname="org.apache.jena.sparql.algebra.optimize.TestSemanticEquivalence" time="0.011"/>
+  <testcase name="implicitJoinEvaluation2" classname="org.apache.jena.sparql.algebra.optimize.TestSemanticEquivalence" time="0.005"/>
+  <testcase name="implicitJoinEvaluation3" classname="org.apache.jena.sparql.algebra.optimize.TestSemanticEquivalence" time="0.022"/>
+  <testcase name="constant_fold_filter_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.004"/>
+  <testcase name="constant_fold_filter_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0"/>
+  <testcase name="constant_fold_filter_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.002"/>
+  <testcase name="constant_fold_filter_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0"/>
+  <testcase name="constant_fold_filter_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.011"/>
+  <testcase name="constant_fold_filter_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.026"/>
+  <testcase name="constant_fold_filter_07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.008"/>
+  <testcase name="constant_fold_filter_08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.001"/>
+  <testcase name="constant_fold_filter_09" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0"/>
+  <testcase name="constant_fold_filter_10" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.007"/>
+  <testcase name="constant_fold_filter_11" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.001"/>
+  <testcase name="constant_fold_filter_12" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.028"/>
+  <testcase name="constant_fold_leftjoin_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.001"/>
+  <testcase name="constant_fold_extend_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0"/>
+  <testcase name="constant_fold_extend_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.001"/>
+  <testcase name="constant_fold_extend_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0"/>
+  <testcase name="constant_fold_extend_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0"/>
+  <testcase name="constant_fold_extend_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0"/>
+  <testcase name="constant_fold_extend_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.001"/>
+  <testcase name="constant_fold_extend_07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0"/>
+  <testcase name="constant_fold_extend_08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0.001"/>
+  <testcase name="constant_fold_group_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformConstantFolding" time="0"/>
+  <testcase name="optionalEqualitySubQuery_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.013"/>
+  <testcase name="optionalEqualitySubQuery_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="test_OptEqualityScope_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="oneOf1" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.015"/>
+  <testcase name="oneOf2" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="oneOf3" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.019"/>
+  <testcase name="oneOf4" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="oneOf5" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="oneOf6" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="implictJoin11" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.009"/>
+  <testcase name="implicitLeftJoin01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="implicitLeftJoin02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="implicitLeftJoin03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="implicitLeftJoin04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="implicitLeftJoin05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="implicitLeftJoin06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="implicitLeftJoin07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="implicitLeftJoin08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitLeftJoin09" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="implicitLeftJoin10" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="implicitLeftJoin11" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitLeftJoin12" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.003"/>
+  <testcase name="implicitLeftJoin13" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="implicitLeftJoin14" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitLeftJoin15" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="implicitLeftJoin16" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.004"/>
+  <testcase name="implicitLeftJoin17" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitLeftJoin18" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitLeftJoin19" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="implicitLeftJoin20" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitLeftJoin21" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitLeftJoin22" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="implicitLeftJoin23" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitLeftJoin24" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="implicitJoin06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="implicitJoin09" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin10" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="implicitJoin12" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin13" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin14" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin15" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="implicitJoin16" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitJoin17" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="optionalEquality_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="disjunction01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="disjunction02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="disjunction03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="disjunction04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="disjunction05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="disjunction06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.013"/>
+  <testcase name="disjunction07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="implicitLeftJoinConditional01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="optionalEqualityScope_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="optionalEqualityScope_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.002"/>
+  <testcase name="optionalEqualityScope_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="inequality01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="inequality02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.001"/>
+  <testcase name="inequality03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="inequality04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="inequality05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.005"/>
+  <testcase name="inequality06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="inequality07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="inequality08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="inequality09" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="inequality10" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="inequality11" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="nested_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0"/>
+  <testcase name="nested_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilters" time="0.01"/>
+  <testcase name="equality02a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0.001"/>
+  <testcase name="equality_path_1" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0.044"/>
+  <testcase name="equality_path_2" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0.002"/>
+  <testcase name="equality_path_3" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality_path_4" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0.002"/>
+  <testcase name="equality03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0.002"/>
+  <testcase name="equality09" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality10" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality11" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality12" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0.002"/>
+  <testcase name="equality13" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality14" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality15" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0.002"/>
+  <testcase name="equality16" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality17" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="equality_expression_1" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterEquality" time="0"/>
+  <testcase name="place_disjunction_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.012"/>
+  <testcase name="place_disjunction_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.002"/>
+  <testcase name="nondeterministic_functions_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="nondeterministic_functions_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="nondeterministic_functions_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="nondeterministic_functions_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="nondeterministic_functions_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="nondeterministic_functions_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="nondeterministic_functions_07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_sequence_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_sequence_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_sequence_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_sequence_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_sequence_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_sequence_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_sequence_07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_sequence_08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.002"/>
+  <testcase name="place_sequence_09" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_property_functions_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_property_functions_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_property_functions_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.002"/>
+  <testcase name="place_property_functions_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.006"/>
+  <testcase name="place_property_functions_02a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_property_functions_02b" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_assign_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_assign_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_assign_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_assign_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_assign_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_assign_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_assign_07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_assign_08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.003"/>
+  <testcase name="place_no_match_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_no_match_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_no_match_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_leftjoin_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_leftjoin_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_leftjoin_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_assign_06a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_conditional_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_conditional_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_conditional_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_sequence_04a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_sequence_05a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_sequence_09a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_filter_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_filter_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_filter_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_filter_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_filter_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_join_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_join_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_join_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_extend_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_extend_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_extend_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_extend_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_extend_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_extend_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_extend_07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_extend_08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.002"/>
+  <testcase name="place_union_02a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_union_03a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_union_04a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_union_05a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_project_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_project_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_project_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_procedure_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.052"/>
+  <testcase name="place_procedure_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_procedure_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_procedure_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_procedure_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_union_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_union_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_union_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_union_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_union_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_union_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_union_07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_distinct_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_distinct_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_distinct_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_distinct_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_bgp_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_bgp_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_bgp_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_bgp_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_bgp_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_bgp_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.016"/>
+  <testcase name="place_bgp_07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_bgp_08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_bgp_50" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.014"/>
+  <testcase name="place_reduced_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_reduced_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_reduced_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_reduced_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_bgp_03a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_bgp_05a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_bgp_06a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_bgp_07a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.001"/>
+  <testcase name="place_bgp_08a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0"/>
+  <testcase name="place_bgp_50a" classname="org.apache.jena.sparql.algebra.optimize.TestTransformFilterPlacement" time="0.002"/>
+  <testcase name="collapse_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0.002"/>
+  <testcase name="collapse_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0"/>
+  <testcase name="collapse_10" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0.003"/>
+  <testcase name="collapse_11" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0"/>
+  <testcase name="collapse_12" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0.001"/>
+  <testcase name="collapse_13" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0"/>
+  <testcase name="collapse_14" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0"/>
+  <testcase name="collapse_20" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0.001"/>
+  <testcase name="collapse_21" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0"/>
+  <testcase name="collapse_22" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0"/>
+  <testcase name="collapse_23" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0"/>
+  <testcase name="collapse_24" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0"/>
+  <testcase name="collapse_30" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0.001"/>
+  <testcase name="collapse_31" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0"/>
+  <testcase name="collapse_32" classname="org.apache.jena.sparql.algebra.optimize.TestTransformMergeBGPs" time="0"/>
+  <testcase name="promote_table_empty_leftjoin_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0.001"/>
+  <testcase name="promote_table_empty_leftjoin_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_leftjoin_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_leftjoin_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_minus_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0.001"/>
+  <testcase name="promote_table_empty_minus_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_assignment_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_assignment_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0.001"/>
+  <testcase name="promote_table_empty_assignment_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_union_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_union_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_union_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_union_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0.001"/>
+  <testcase name="promote_table_empty_union_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_join_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_join_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="promote_table_empty_join_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformPromoteTableEmpty" time="0"/>
+  <testcase name="exists_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.026"/>
+  <testcase name="exists_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="exists_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.019"/>
+  <testcase name="exists_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="orderby_unstable_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="orderby_unstable_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="orderby_unstable_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="orderby_unstable_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="filter_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="filter_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="no_merge_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="extend_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="extend_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="extend_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="filter_unstable_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="filter_unstable_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="filter_unstable_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="filter_unstable_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="scope_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="scope_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="scope_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="scope_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="scope_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="scope_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="ineligible_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="ineligible_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="ineligible_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="ineligible_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="ineligible_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="ineligible_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="ineligible_07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="ineligible_08" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="ineligible_09" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="ineligible_12" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="ineligible_13" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="orderby_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="orderby_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.016"/>
+  <testcase name="orderby_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="through_project_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="through_project_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="through_project_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="through_project_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="unused_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0.001"/>
+  <testcase name="unused_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformEliminateAssignments" time="0"/>
+  <testcase name="topN_query_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0.001"/>
+  <testcase name="topN_query_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0.001"/>
+  <testcase name="topN_query_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_query_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_01" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0.001"/>
+  <testcase name="topN_02" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_03" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_04" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_05" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_06" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0.001"/>
+  <testcase name="topN_07" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_11" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_12" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0.001"/>
+  <testcase name="topN_13" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_14" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_15" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_16" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0"/>
+  <testcase name="topN_17" classname="org.apache.jena.sparql.algebra.optimize.TestTransformTopN" time="0.001"/>
+  <testcase name="combine_assign_01" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="combine_assign_02" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="combine_assign_03" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0"/>
+  <testcase name="combine_assign_04" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.002"/>
+  <testcase name="combine_assign_05" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="subselect_01" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.002"/>
+  <testcase name="subselect_02" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_01" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_02" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_03" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_04" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_05" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_06" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_07" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_08" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_09" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_10" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_11" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="slice_order_to_topn_12" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="subQueryProject_01" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="subQueryProject_02" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="combine_extend_01" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="combine_extend_02" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="combine_extend_03" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0"/>
+  <testcase name="combine_extend_04" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.002"/>
+  <testcase name="combine_extend_05" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="joinSequence_01" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.003"/>
+  <testcase name="optimize_01" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.001"/>
+  <testcase name="optimize_02" classname="org.apache.jena.sparql.algebra.optimize.TestOptimizer" time="0.002"/>
+</testsuite>

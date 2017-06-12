@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.riot.writer.TS_RiotWriter
+-------------------------------------------------------------------------------
+Tests run: 695, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.063 sec - in org.apache.jena.riot.writer.TS_RiotWriter

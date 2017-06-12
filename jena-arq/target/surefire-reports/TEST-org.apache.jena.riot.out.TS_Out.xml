@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.riot.out.TS_Out" time="0.049" tests="128" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="escape_nt_00" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0.003"/>
+  <testcase name="escape_nt_01" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_nt_02" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_nt_03" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_nt_04" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_nt_05" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_multiline_str0" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_multiline_str1" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_multiline_str2" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_multiline_str3" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_multiline_str4" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_multiline_str5" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_00" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_01" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_02" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_03" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_04" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote1_05" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_00" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_01" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_02" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_03" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_04" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_05" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_multiline_str0" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_multiline_str1" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_multiline_str2" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_multiline_str3" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_multiline_str4" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="escape_ttl_singleline_quote2_multiline_str5" classname="org.apache.jena.riot.out.TestQuotedStringOutput" time="0"/>
+  <testcase name="nodefmt_rdf11_01" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_rdf11_02" classname="org.apache.jena.riot.out.TestNodeFmt" time="0.001"/>
+  <testcase name="prefixedname_01" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_05a" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_06a" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_07a" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_01" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_02" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_03" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_04" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_05" classname="org.apache.jena.riot.out.TestNodeFmt" time="0.006"/>
+  <testcase name="nodefmt_ttl_06" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_07" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_08" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_11" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_12" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_13" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_14" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_15" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_16" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_17" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_18" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_19" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_20" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_21" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_29" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_30" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_31" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_32" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_33" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_34" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_35" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_40" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_41" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_42" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_43" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_44" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_45" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_46" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_47" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_48" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_49" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_50" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_51" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_52" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_53" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_54" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_55" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_56" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_57" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_58" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_59" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_60" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_61" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_62" classname="org.apache.jena.riot.out.TestNodeFmt" time="0.003"/>
+  <testcase name="nodefmt_ttl_70" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_71" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_72" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_73" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_74" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_75" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_01" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_02" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_03" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_04" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_05" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_06" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_07" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_08" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_09" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_10" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_11" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_12" classname="org.apache.jena.riot.out.TestNodeFmt" time="0.001"/>
+  <testcase name="nodefmt_nt_13" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_14" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_nt_15" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_ML_01" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_ML_02" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="nodefmt_ttl_ML_03" classname="org.apache.jena.riot.out.TestNodeFmt" time="0"/>
+  <testcase name="rt_01" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="rt_02" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="rt_03" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="rt_04" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="rt_05" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="rt_06" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="rt_07" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="encode_01" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="encode_02" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="encode_03" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="encode_04" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="encode_05" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="fmtNode_01" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="fmtNode_02" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0.002"/>
+  <testcase name="fmtNode_03" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="fmtNode_04" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="fmtNode_05" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="fmtNode_06" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0"/>
+  <testcase name="fmtNode_07" classname="org.apache.jena.riot.out.TestNodeFmtLib" time="0.001"/>
+</testsuite>

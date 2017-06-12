@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.query.TS_ParamString" time="2.171" tests="140" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="test_param_string_injection_01" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.003"/>
+  <testcase name="test_param_string_injection_02" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_injection_03" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.371"/>
+  <testcase name="test_param_string_injection_04" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_injection_05" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.248"/>
+  <testcase name="test_param_string_injection_06" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_injection_07" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_injection_08" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_injection_09" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_injection_10" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_injection_11" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_injection_12" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_injection_13" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_injection_14" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_injection_15" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_precedence_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_precedence_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.005"/>
+  <testcase name="test_param_string_simple_bad_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.006"/>
+  <testcase name="test_param_string_append_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_append_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_append_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_append_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_append_5" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_double_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_double_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_double_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.027"/>
+  <testcase name="test_param_string_double_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_double_5" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_double_6" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_append_integer_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_append_integer_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_append_integer_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_append_double_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_append_double_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_append_double_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.004"/>
+  <testcase name="test_param_string_string_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_string_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_string_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_string_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_string_5" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_string_6" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_string_7" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_prefixes_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_prefixes_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_boolean_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_boolean_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_boolean_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_boolean_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_boolean_5" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_boolean_6" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.004"/>
+  <testcase name="test_param_string_non_injection_01" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_positional_5" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_6" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.004"/>
+  <testcase name="test_param_string_positional_7" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_float_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.003"/>
+  <testcase name="test_param_string_float_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_prefixes_bad_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_base_bad_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_positional_injection_01" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_injection_02" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_injection_03" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_injection_04" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_positional_injection_05" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_positional_injection_06" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_injection_07" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_injection_08" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_injection_09" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_positional_injection_10" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_positional_injection_11" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_injection_12" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_injection_13" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.003"/>
+  <testcase name="test_param_string_positional_injection_14" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_injection_15" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_append_boolean_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_append_boolean_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_constructor_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_constructor_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_constructor_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_constructor_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.024"/>
+  <testcase name="test_param_string_constructor_5" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_constructor_6" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_constructor_7" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_constructor_8" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_constructor_9" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_bnode_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_bnode_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_bnode_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="1.291"/>
+  <testcase name="test_param_string_name_collision_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_name_collision_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_name_collision_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_append_iri_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_append_iri_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_base_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_bug_01" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_bug_02" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_bug_03" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_bug_04" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_copy_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_copy_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_copy_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_copy_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_copy_5" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_copy_6" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_copy_7" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_copy_8" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_date_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_date_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.005"/>
+  <testcase name="test_param_string_date_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_date_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_clear_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_clear_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_clear_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_clear_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_clear_5" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_clear_6" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_eligible_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_eligible_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_positional_eligible_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_bad_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_int_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_int_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_int_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_int_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_int_5" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_int_6" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.002"/>
+  <testcase name="test_param_string_iri_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_iri_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_iri_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_iri_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_iri_5" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_positional_non_injection_01" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_lang_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_lang_2" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_lang_3" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+  <testcase name="test_param_string_lang_4" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0"/>
+  <testcase name="test_param_string_mixed_1" classname="org.apache.jena.query.TestParameterizedSparqlString" time="0.001"/>
+</testsuite>

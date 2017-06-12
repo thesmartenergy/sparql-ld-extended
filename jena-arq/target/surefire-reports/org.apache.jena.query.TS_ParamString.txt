@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.query.TS_ParamString
+-------------------------------------------------------------------------------
+Tests run: 140, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.171 sec - in org.apache.jena.query.TS_ParamString

@@ -1,0 +1,7 @@
+{ loc: room/2 ,
+  p1: room/2#temperature ,
+  temp: 10.0 ,
+  p2: room/2#occupancy ,
+  occ: 1,
+  f: 2
+}

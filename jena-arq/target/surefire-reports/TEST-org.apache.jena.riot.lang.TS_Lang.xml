@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.riot.lang.TS_Lang" time="8.109" tests="460" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="iri1" classname="org.apache.jena.riot.lang.TestIRI" time="0"/>
+  <testcase name="iri2" classname="org.apache.jena.riot.lang.TestIRI" time="0.001"/>
+  <testcase name="bNodeIRI_1" classname="org.apache.jena.riot.lang.TestIRI" time="0"/>
+  <testcase name="bNodeIRI_2" classname="org.apache.jena.riot.lang.TestIRI" time="0"/>
+  <testcase name="iriErr1" classname="org.apache.jena.riot.lang.TestIRI" time="0.004"/>
+  <testcase name="iriErr2" classname="org.apache.jena.riot.lang.TestIRI" time="0"/>
+  <testcase name="iriErr3" classname="org.apache.jena.riot.lang.TestIRI" time="0"/>
+  <testcase name="testGet" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="testDefaultInExtensions" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_01" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_02" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_03" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_04" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_05" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_06" classname="org.apache.jena.riot.lang.TestLang" time="0.001"/>
+  <testcase name="registration_07" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_08" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_09" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_10" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_11" classname="org.apache.jena.riot.lang.TestLang" time="0.001"/>
+  <testcase name="lang_01" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="lang_02" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="lang_03" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="lang_04" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="lang_05" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="lang_06" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="lang_07" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="lang_08" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="lang_09" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="lang_10" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="lang_11" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_01a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_02a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_03a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_04a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_05a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_06a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_07a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_08a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_09a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_10a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="registration_11a" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="testFileExtensionUnique" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="testFileExtensionsProvided" classname="org.apache.jena.riot.lang.TestLang" time="0"/>
+  <testcase name="alloc_01[0: SeededHash]" classname="org.apache.jena.riot.lang.TestBlankNodeAllocator" time="0"/>
+  <testcase name="alloc_02[0: SeededHash]" classname="org.apache.jena.riot.lang.TestBlankNodeAllocator" time="0"/>
+  <testcase name="alloc_03[0: SeededHash]" classname="org.apache.jena.riot.lang.TestBlankNodeAllocator" time="0.01"/>
+  <testcase name="alloc_04[0: SeededHash]" classname="org.apache.jena.riot.lang.TestBlankNodeAllocator" time="0.001"/>
+  <testcase name="alloc_01[1: UID]" classname="org.apache.jena.riot.lang.TestBlankNodeAllocator" time="0.001"/>
+  <testcase name="alloc_02[1: UID]" classname="org.apache.jena.riot.lang.TestBlankNodeAllocator" time="0"/>
+  <testcase name="alloc_03[1: UID]" classname="org.apache.jena.riot.lang.TestBlankNodeAllocator" time="0"/>
+  <testcase name="alloc_04[1: UID]" classname="org.apache.jena.riot.lang.TestBlankNodeAllocator" time="0"/>
+  <testcase name="allocGraphScope1" classname="org.apache.jena.riot.lang.TestNodeAllocator" time="0.011"/>
+  <testcase name="allocGraphScope2" classname="org.apache.jena.riot.lang.TestNodeAllocator" time="0.003"/>
+  <testcase name="allocGraphScope3" classname="org.apache.jena.riot.lang.TestNodeAllocator" time="0"/>
+  <testcase name="allocGraphScope4" classname="org.apache.jena.riot.lang.TestNodeAllocator" time="0"/>
+  <testcase name="allocGraphScope5" classname="org.apache.jena.riot.lang.TestNodeAllocator" time="0"/>
+  <testcase name="allocOneScope1" classname="org.apache.jena.riot.lang.TestNodeAllocator" time="0"/>
+  <testcase name="allocOneScope2" classname="org.apache.jena.riot.lang.TestNodeAllocator" time="0"/>
+  <testcase name="allocOneScope3" classname="org.apache.jena.riot.lang.TestNodeAllocator" time="0"/>
+  <testcase name="allocOneScope4" classname="org.apache.jena.riot.lang.TestNodeAllocator" time="0"/>
+  <testcase name="allocOneScope5" classname="org.apache.jena.riot.lang.TestNodeAllocator" time="0.001"/>
+  <testcase name="label2node_Label1[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.002"/>
+  <testcase name="label2node_Label2[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label3[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label4[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label5[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label6[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label7[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create1[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create2[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create3[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset1[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset2[0: SyntaxLabels.createLabelToNode]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label1[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.001"/>
+  <testcase name="label2node_Label2[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label3[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label4[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.001"/>
+  <testcase name="label2node_Label5[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label6[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.001"/>
+  <testcase name="label2node_Label7[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create1[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create2[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create3[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.002"/>
+  <testcase name="label2node_Reset1[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset2[1: ScopeByDocumentHash]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.001"/>
+  <testcase name="label2node_Label1[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label2[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label3[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label4[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label5[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label6[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label7[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create1[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create2[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create3[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset1[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset2[2: ScopeByDocumentOld]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label1[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label2[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label3[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.001"/>
+  <testcase name="label2node_Label4[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label5[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label6[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.001"/>
+  <testcase name="label2node_Label7[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create1[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create2[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.002"/>
+  <testcase name="label2node_Create3[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset1[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset2[3: ScopeByGraph]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label1[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label2[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label3[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label4[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label5[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label6[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label7[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create1[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create2[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create3[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset1[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset2[4: UseLabelAsGiven]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label1[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.002"/>
+  <testcase name="label2node_Label2[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label3[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label4[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label5[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label6[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label7[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create1[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create2[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create3[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset1[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.001"/>
+  <testcase name="label2node_Reset2[5: UseLabelEncoded]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label1[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label2[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label3[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label4[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label5[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label6[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Label7[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create1[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0.001"/>
+  <testcase name="label2node_Create2[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Create3[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset1[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="label2node_Reset2[6: Incremental]" classname="org.apache.jena.riot.lang.TestLabelToNode" time="0"/>
+  <testcase name="node2label_01[0: SyntaxLabels.createNodeToLabel]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0.008"/>
+  <testcase name="node2label_02[0: SyntaxLabels.createNodeToLabel]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_03[0: SyntaxLabels.createNodeToLabel]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_01[1: NodeToLabel.createBNodeByIRI()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0.001"/>
+  <testcase name="node2label_02[1: NodeToLabel.createBNodeByIRI()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_03[1: NodeToLabel.createBNodeByIRI()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_01[2: NodeToLabel.createBNodeByLabelAsGiven()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_02[2: NodeToLabel.createBNodeByLabelAsGiven()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_03[2: NodeToLabel.createBNodeByLabelAsGiven()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_01[3: NodeToLabel.createBNodeByLabelEncoded()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_02[3: NodeToLabel.createBNodeByLabelEncoded()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_03[3: NodeToLabel.createBNodeByLabelEncoded()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_01[4: NodeToLabel.labelByInternal()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_02[4: NodeToLabel.labelByInternal()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0"/>
+  <testcase name="node2label_03[4: NodeToLabel.labelByInternal()]" classname="org.apache.jena.riot.lang.TestNodeToLabel" time="0.001"/>
+  <testcase name="turtle_001" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_002" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_003" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_004" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_005" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_006" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_007" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_008" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_009" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.002"/>
+  <testcase name="turtle_010" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_011" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_012" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_013" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_014" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_015" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.003"/>
+  <testcase name="turtle_016" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_017" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_018" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_019" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.003"/>
+  <testcase name="turtle_020" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_021" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_022" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_023" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_024" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_025" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_026" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_027" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_028" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_033" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.004"/>
+  <testcase name="turtle_034" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.005"/>
+  <testcase name="turtle_035" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_036" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_037" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_038" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_039" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_040" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_041" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_042" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_043" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_044" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_053" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_054" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_055" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_056" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_057" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_058" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_059" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_060" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_063" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_064" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_065" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.008"/>
+  <testcase name="turtle_066" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_067" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_068" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_069" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_079" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_080" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_102" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_103" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_104" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.009"/>
+  <testcase name="turtle_105" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_107" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_108" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_109" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_110" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_111" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_112" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_113" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_120" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_121" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_122" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_123" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.006"/>
+  <testcase name="turtle_124" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_125" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.003"/>
+  <testcase name="turtle_150" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_151" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0.001"/>
+  <testcase name="turtle_152" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="turtle_153" classname="org.apache.jena.riot.lang.TestTurtleTerms" time="0"/>
+  <testcase name="nt_model_1" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.025"/>
+  <testcase name="nt_only_1" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.033"/>
+  <testcase name="nt_only_2" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.001"/>
+  <testcase name="nt_only_5" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="nt_reader_twice" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.002"/>
+  <testcase name="nt_only_5b" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.015"/>
+  <testcase name="tuple_0" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.001"/>
+  <testcase name="tuple_1" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="tuple_2" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="tuple_3" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.001"/>
+  <testcase name="tuple_4" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="tuple_5" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="tuple_bad_01" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.001"/>
+  <testcase name="tuple_bad_02" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.003"/>
+  <testcase name="tuple_bad_03" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="tuple_bad_10" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="tuple_bad_11" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="tuple_bad_21" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.001"/>
+  <testcase name="tuple_bad_22" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.001"/>
+  <testcase name="tuple_bad_23" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.001"/>
+  <testcase name="tuple_charset_1" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="tuple_charset_2" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="tuple_bad_4" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.001"/>
+  <testcase name="tuple_bad_5" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="tuple_bad_6" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0.002"/>
+  <testcase name="tuple_bad_7" classname="org.apache.jena.riot.lang.TestLangNTriples" time="0"/>
+  <testcase name="quad_1" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="quad_2" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="dataset_1" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0.018"/>
+  <testcase name="nq_only_1" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0.002"/>
+  <testcase name="nq_only_2" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_0" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_1" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0.004"/>
+  <testcase name="tuple_2" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_3" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_4" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_5" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_bad_01" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_bad_02" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_bad_03" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_bad_10" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_bad_11" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0.003"/>
+  <testcase name="tuple_bad_21" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_bad_22" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_bad_23" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_charset_1" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_charset_2" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_bad_4" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_bad_5" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0.002"/>
+  <testcase name="tuple_bad_6" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="tuple_bad_7" classname="org.apache.jena.riot.lang.TestLangNQuads" time="0"/>
+  <testcase name="blankNodes1" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.002"/>
+  <testcase name="blankNodes2" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0"/>
+  <testcase name="errorJunk_1" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0"/>
+  <testcase name="errorJunk_2" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="errorBadDatatype" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0"/>
+  <testcase name="updatePrefixMapping1" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="updatePrefixMapping2" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0"/>
+  <testcase name="triple" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="errorBadList_1" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0"/>
+  <testcase name="errorBadList_2" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="errorNoPrefixDef" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0"/>
+  <testcase name="turtle_01" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.002"/>
+  <testcase name="turtle_02" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0"/>
+  <testcase name="turtle_03" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="turtle_10" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="turtle_20" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="optionalDotInBase" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="errorNoPrefixDefDT" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0"/>
+  <testcase name="errorBadURI_1" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="errorBadURI_2" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0"/>
+  <testcase name="errorBadURI_3" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="errorBadURI_4" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="errorBadURI_5" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0"/>
+  <testcase name="optionalDotInPrefix" classname="org.apache.jena.riot.lang.TestLangTurtle" time="0.001"/>
+  <testcase name="trig_01" classname="org.apache.jena.riot.lang.TestLangTrig" time="0.01"/>
+  <testcase name="trig_02" classname="org.apache.jena.riot.lang.TestLangTrig" time="0.001"/>
+  <testcase name="trig_03" classname="org.apache.jena.riot.lang.TestLangTrig" time="0"/>
+  <testcase name="trig_04" classname="org.apache.jena.riot.lang.TestLangTrig" time="0.001"/>
+  <testcase name="trig_05" classname="org.apache.jena.riot.lang.TestLangTrig" time="0"/>
+  <testcase name="trig_10" classname="org.apache.jena.riot.lang.TestLangTrig" time="0.001"/>
+  <testcase name="trig_11" classname="org.apache.jena.riot.lang.TestLangTrig" time="0.001"/>
+  <testcase name="trig_12" classname="org.apache.jena.riot.lang.TestLangTrig" time="0.005"/>
+  <testcase name="trig_20" classname="org.apache.jena.riot.lang.TestLangTrig" time="0"/>
+  <testcase name="trig_21" classname="org.apache.jena.riot.lang.TestLangTrig" time="0"/>
+  <testcase name="trig_22" classname="org.apache.jena.riot.lang.TestLangTrig" time="0"/>
+  <testcase name="trig_23" classname="org.apache.jena.riot.lang.TestLangTrig" time="0"/>
+  <testcase name="rdfjson_read_empty_graph" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.011"/>
+  <testcase name="rdfjson_read_objectlist_mixed" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.003"/>
+  <testcase name="rdfjson_invalid_unterminated_predicateobjectlist_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_read_objectlist_literals2" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.004"/>
+  <testcase name="rdfjson_read_objectlist_literals3" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_invalid_tokenizer" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_invalid_missing_colon_in_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.001"/>
+  <testcase name="rdfjson_invalid_repeated_property_type_in_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_invalid_array_toplevel" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.002"/>
+  <testcase name="rdfjson_read_simple_bnode_subject" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_invalid_unterminated_object_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.005"/>
+  <testcase name="rdfjson_read_predicatelist" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_invalid_property_names_in_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_invalid_trailing_comma_after_subject" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_read_simple_typedliteral_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_invalid_lang_and_datatype_in_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.001"/>
+  <testcase name="rdfjson_invalid_lang_and_datatype_in_object2" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_read_simple_plainliteral_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.001"/>
+  <testcase name="rdfjson_read_subjectlist" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.002"/>
+  <testcase name="rdfjson_read_objectlist_literals" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.004"/>
+  <testcase name="rdfjson_invalid_value_type_in_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_read_simple_bnode_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_read_objectlist_uris" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.001"/>
+  <testcase name="rdfjson_invalid_trailing_comma_in_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.001"/>
+  <testcase name="rdfjson_get_jena_reader" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_invalid_trailing_content" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_read_bnode_identity2" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.002"/>
+  <testcase name="rdfjson_get_jena_writer" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.009"/>
+  <testcase name="rdfjson_invalid_unterminated_objectlist_array" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.001"/>
+  <testcase name="rdfjson_read_bnode_identity" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.002"/>
+  <testcase name="rdfjson_invalid_empty_string" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_invalid_missing_colon_after_subject" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.001"/>
+  <testcase name="rdfjson_invalid_unterminated_graph" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_invalid_trailing_comma_after_predicate" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.001"/>
+  <testcase name="rdfjson_read_objectlist_bnodes" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.002"/>
+  <testcase name="rdfjson_invalid_repeated_property_value_in_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0"/>
+  <testcase name="rdfjson_read_simple_uri_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.002"/>
+  <testcase name="rdfjson_read_simple_langliteral_object" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.001"/>
+  <testcase name="rdfjson_invalid_missing_colon_after_predicate" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.002"/>
+  <testcase name="rdfjson_read_complex" classname="org.apache.jena.riot.lang.TestLangRdfJson" time="0.001"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-01.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.143"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-01.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.004"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-01.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.004"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-02.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.02"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-02.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.002"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-02.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-03.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.011"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-03.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-03.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-04.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.023"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-04.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.004"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-04.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.005"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-05.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.008"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-05.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-05.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.004"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-06.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.018"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-06.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-06.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.004"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-10.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.013"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-10.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.008"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-10.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.006"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-11.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.005"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-11.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.005"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-11.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.005"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-12.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.005"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-12.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.008"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-12.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.008"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-13.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.024"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-13.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.007"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-13.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.006"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-14.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.015"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-14.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.005"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-14.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.005"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-15.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.022"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-15.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-15.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.004"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-ex-1.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.001"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-ex-1.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.001"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-ex-1.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-ex-3.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-ex-3.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.002"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-ex-3.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.004"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-ex-4.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-ex-4.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-ex-4.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.003"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-ex-5.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.013"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-ex-5.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.006"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-ex-5.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.002"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-w3c-1.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.01"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-w3c-1.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.002"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-w3c-1.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.002"/>
+  <testcase name="trix_model[testing/RIOT/Lang/TriX/trix-w3c-2.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.031"/>
+  <testcase name="trix_direct[testing/RIOT/Lang/TriX/trix-w3c-2.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.004"/>
+  <testcase name="trix_dataset[testing/RIOT/Lang/TriX/trix-w3c-2.trix]" classname="org.apache.jena.riot.lang.TestTriXReader" time="0.002"/>
+  <testcase name="trix_bad[testing/RIOT/Lang/TriX/trix-bad-01.trix]" classname="org.apache.jena.riot.lang.TestTriXBad" time="0.001"/>
+  <testcase name="trix_bad[testing/RIOT/Lang/TriX/trix-bad-02.trix]" classname="org.apache.jena.riot.lang.TestTriXBad" time="0.002"/>
+  <testcase name="trix_bad[testing/RIOT/Lang/TriX/trix-bad-03.trix]" classname="org.apache.jena.riot.lang.TestTriXBad" time="0.002"/>
+  <testcase name="trix_bad[testing/RIOT/Lang/TriX/trix-bad-04.trix]" classname="org.apache.jena.riot.lang.TestTriXBad" time="0.012"/>
+  <testcase name="trix_bad[testing/RIOT/Lang/TriX/trix-bad-05.trix]" classname="org.apache.jena.riot.lang.TestTriXBad" time="0.002"/>
+  <testcase name="trix_bad[testing/RIOT/Lang/TriX/trix-bad-06.trix]" classname="org.apache.jena.riot.lang.TestTriXBad" time="0.001"/>
+  <testcase name="trix_bad[testing/RIOT/Lang/TriX/trix-bad-07.trix]" classname="org.apache.jena.riot.lang.TestTriXBad" time="0.02"/>
+  <testcase name="trix_bad[testing/RIOT/Lang/TriX/trix-bad-08.trix]" classname="org.apache.jena.riot.lang.TestTriXBad" time="0.002"/>
+  <testcase name="trix_bad[testing/RIOT/Lang/TriX/trix-bad-09.trix]" classname="org.apache.jena.riot.lang.TestTriXBad" time="0.001"/>
+  <testcase name="trig_01" classname="org.apache.jena.riot.lang.TestParserFactory" time="0.001"/>
+  <testcase name="trig_02" classname="org.apache.jena.riot.lang.TestParserFactory" time="0.001"/>
+  <testcase name="turtle_01" classname="org.apache.jena.riot.lang.TestParserFactory" time="0.002"/>
+  <testcase name="ntriples_01" classname="org.apache.jena.riot.lang.TestParserFactory" time="0"/>
+  <testcase name="nquads_01" classname="org.apache.jena.riot.lang.TestParserFactory" time="0.001"/>
+  <testcase name="streamed_state_bad_01" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.04"/>
+  <testcase name="streamed_state_bad_03" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="1.044"/>
+  <testcase name="streamed_state_bad_04" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.043"/>
+  <testcase name="streamed_state_bad_05" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="3.022"/>
+  <testcase name="streamed_quads_iterator_01" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.062"/>
+  <testcase name="streamed_quads_iterator_02" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.036"/>
+  <testcase name="streamed_quads_iterator_03" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.027"/>
+  <testcase name="streamed_quads_iterator_04" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.011"/>
+  <testcase name="streamed_quads_iterator_05" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.02"/>
+  <testcase name="streamed_quads_iterator_06" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.806"/>
+  <testcase name="streamed_quads_iterator_07" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.615"/>
+  <testcase name="streamed_triples_bad_01" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.024"/>
+  <testcase name="streamed_triples_bad_02" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.001"/>
+  <testcase name="streamed_iterator_usage_01" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0"/>
+  <testcase name="streamed_iterator_usage_02" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0"/>
+  <testcase name="streamed_triples_iterator_01" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.007"/>
+  <testcase name="streamed_triples_iterator_02" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.01"/>
+  <testcase name="streamed_triples_iterator_03" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.01"/>
+  <testcase name="streamed_triples_iterator_04" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.008"/>
+  <testcase name="streamed_triples_iterator_05" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.008"/>
+  <testcase name="streamed_triples_iterator_06" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.638"/>
+  <testcase name="streamed_triples_iterator_07" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0.508"/>
+  <testcase name="streamed_instantiation_bad_01" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0"/>
+  <testcase name="streamed_instantiation_bad_02" classname="org.apache.jena.riot.lang.TestPipedRDFIterators" time="0"/>
+  <testcase name="test_streamed_triples" classname="org.apache.jena.riot.lang.TestCollectorStream" time="0.026"/>
+  <testcase name="test_streamed_quads" classname="org.apache.jena.riot.lang.TestCollectorStream" time="0.005"/>
+</testsuite>

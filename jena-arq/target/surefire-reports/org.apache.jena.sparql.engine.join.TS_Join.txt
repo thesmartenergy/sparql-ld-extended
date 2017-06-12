@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.sparql.engine.join.TS_Join
+-------------------------------------------------------------------------------
+Tests run: 244, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 sec - in org.apache.jena.sparql.engine.join.TS_Join

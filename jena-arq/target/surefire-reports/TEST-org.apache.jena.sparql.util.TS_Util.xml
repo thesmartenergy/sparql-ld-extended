@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.jena.sparql.util.TS_Util" time="0.002" tests="102" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="user.country.format" value="FR"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Sejal/Desktop/Internship/jena-3.3.0/jena-arq"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/wy/dyqvnk8n7tsdv7bhf0vwwdl00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Sejal"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Sejal"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="java.ext.dirs" value="/Users/Sejal/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testGYearMonth_1" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGYearMonth_2" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGYearMonth_3" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGMonth_1" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGMonth_2" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGMonth_3" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testD_1" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testD_2" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_10" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_11" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_12" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_1" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_2" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_3" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_4" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_5" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_6" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_7" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testDT_8" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testD_10" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGYear_1" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGYear_2" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGYear_3" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGMonthDay_1" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGMonthDay_2" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGMonthDay_3" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGDay_1" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGDay_2" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testGDay_3" classname="org.apache.jena.sparql.util.TestDateTimeParsing" time="0"/>
+  <testcase name="testListOccurs_1" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_2" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_3" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_4" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_5" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_6" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_7" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_8" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_9" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListGet_1" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListGet_2" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListGet_3" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListGet_4" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListGet_5" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListGet_6" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListGet_7" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListLength_1" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListLength_2" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListLength_3" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_10" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_11" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListOccurs_12" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndexes_1" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndexes_2" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndexes_3" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndexes_4" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndexes_5" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndexes_6" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListTriples_1" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListTriples_2" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListContains_1" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListContains_2" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListContains_3" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListContains_4" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListContains_5" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndex_1" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndex_2" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndex_3" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndex_4" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndex_5" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndex_6" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndex_7" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testListIndex_8" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testGraphListMember_01" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testGraphListMember_02" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testGraphListMember_03" classname="org.apache.jena.sparql.util.TestList" time="0"/>
+  <testcase name="testCalendarToXSDDateString" classname="org.apache.jena.atlas.lib.TestDateTimeUtils" time="0"/>
+  <testcase name="testCalendarToXSDDateTimeString_1" classname="org.apache.jena.atlas.lib.TestDateTimeUtils" time="0"/>
+  <testcase name="testCalendarToXSDDateTimeString_2" classname="org.apache.jena.atlas.lib.TestDateTimeUtils" time="0"/>
+  <testcase name="testCalendarToXSDTimeString_1" classname="org.apache.jena.atlas.lib.TestDateTimeUtils" time="0"/>
+  <testcase name="testCalendarToXSDTimeString_2" classname="org.apache.jena.atlas.lib.TestDateTimeUtils" time="0"/>
+  <testcase name="anonNode1" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="anonNode2" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="stringForTriple_WithPrefixMapping" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="stringForQuad_WithPrefixMapping" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="booleanLiteral" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="stringForRDFNode_literal" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="anyNode" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="decimalLiteral" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="stringForTripleEncoding" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="integerLiteral" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="variableNode" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="doubleLiteral" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="stringForString" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="stringLiteral" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="testStringEsc" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="stringForRDFNode_resource" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="testStringForURI" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="testFormatBGP_1" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="testFormatBGP_2" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="stringForObject_misc_versions" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="formatPattern_2_triples" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+  <testcase name="stringForQuadEncoding" classname="org.apache.jena.sparql.util.TestFmtUtils" time="0"/>
+</testsuite>

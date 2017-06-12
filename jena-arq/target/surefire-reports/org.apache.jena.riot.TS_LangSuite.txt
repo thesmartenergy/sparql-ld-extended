@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.jena.riot.TS_LangSuite
+-------------------------------------------------------------------------------
+Tests run: 861, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.236 sec - in org.apache.jena.riot.TS_LangSuite
