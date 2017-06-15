@@ -63,8 +63,11 @@ public class Test2_works {
     private static String QUERY_TO_RUN; // The query to run
     private static String URL_DataCatalogue;
     //Used only if we need to check for 'endpoint' info in Data Catalogue
-    private static String ask_endpoint_query = "ASK { ?x <http://example.org/data/endpoint> ?z }";
-    private static String ask_liftingrule_query = "ASK { ?x <http://example.org/data/liftingrule> ?z }";
+    //private static String ask_endpoint_query = "ASK { ?x <http://example.org/data/endpoint> ?z }";
+    //private static String ask_liftingrule_query = "ASK { ?x <http://example.org/data/liftingrule> ?z }";
+    //private static StringBuilder ask_endpoint_query = new StringBuilder();
+    private static StringBuilder ask_endpoint_query = new StringBuilder();
+    private static StringBuilder ask_liftingrule_query = new StringBuilder();
     //List of subject is populated only if list_triples is looked up
     private static Set <Node> list_subjects = new HashSet<Node>();
     private static List list_trip = new ArrayList();
@@ -81,7 +84,9 @@ public class Test2_works {
                         while ( it.hasNext() ) {
                             final TriplePath tp = it.next();
                             list_trip.add(tp);
+                            //System.out.println(list_trip);
                             list_subjects.add(tp.getSubject());
+                            //System.out.println(list_trip);
                     }
                 }
             });
@@ -92,7 +97,22 @@ public class Test2_works {
         //return(list_trip);
     }
     
+    public static void Check_EP_LR(Node sub_element){
+        ask_endpoint_query = new StringBuilder();
+        ask_liftingrule_query= new StringBuilder();
+        ask_endpoint_query.append("ASK { ").append(sub_element.toString()).append(" <http://example.org/data/endpoint> ?z }");
+        System.out.println("#ENDPOINT ASK: " + ask_endpoint_query.toString() +"\n");
+        
+        //if(ask_liftingrule_query!= null && !(ask_liftingrule_query.toString().equals(""))){
+        //   ask_liftingrule_query.replace(0,-1,"");
+        //}
+        ask_liftingrule_query.append("ASK { ").append(sub_element.toString()).append(" <http://example.org/data/liftingrule> ?z }");
+        System.out.println("#LiftingRule ASK: " + ask_liftingrule_query.toString() +"\n");
+        return;
+    }
+        
     public static void Parse_DC(Query query){
+        System.out.println("### Subjects: "+ list_subjects);
         System.out.println("# Parsing the Data Catalogue.");
         ElementWalker.walk(query.getQueryPattern(),
             new ElementVisitorBase() {
@@ -100,14 +120,13 @@ public class Test2_works {
                     Iterator<Node> iterator = list_subjects.iterator();
                     while(iterator.hasNext()){
                         Node sub_element = iterator.next();
-                        System.out.println("### Subject: "+ sub_element);
+                        //System.out.println("### Subject: "+ sub_element);
                         Iterator<TriplePath> triples = el.patternElts();
                         //StringBuilder select_statement = new StringBuilder();
                         StringBuilder ASK_Sub_query = new StringBuilder();
                         StringBuilder SELECT_Sub_query = new StringBuilder();
                         Resource ep = null;
                         Resource lr = null;
-                        //Sub_query.append("PREFIX seas: <https://w3id.org/seas/>").append("\n");
                         ASK_Sub_query.append("ASK { ").append("\n");
                         //select_statement.append("SELECT * WHERE { ").append("\n");
                         SELECT_Sub_query.append("SELECT * WHERE { ").append("\n");
@@ -134,30 +153,31 @@ public class Test2_works {
                                 } else {
                                     ASK_Sub_query.append(tp.getSubject()).append(" ").append(tp.getPredicate()).append(" ").append(tp.getObject());
                                     SELECT_Sub_query.append(tp.getSubject()).append(" ").append(tp.getPredicate()).append(" ").append(tp.getObject());
-                                    //Sub_query.append(tp);
                                 }
+                                Check_EP_LR(tp.getSubject());
                                 ASK_Sub_query.append(".").append("\n");
                                 SELECT_Sub_query.append(".").append("\n");
                             }
-                        }                         
+                        }
                         ASK_Sub_query.append("} ");
                         SELECT_Sub_query.append("} ");
                         System.out.println("ASK Subquery formed: \n" + ASK_Sub_query);
                         //System.out.println("SELECT Subquery formed: \n" + SELECT_Sub_query);
                         QUERY_TO_RUN = ASK_Sub_query.toString();
                         Query sub_query = QueryFactory.create(QUERY_TO_RUN);
-                        //try{
-                            boolean triple_present = Execute_ASK_Subquery(sub_query);
-                        //} catch(Exception e){
-                            //System.out.println("Caught an exception when executing subquery");
-                            //e.printStackTrace();
-                        //}
+                        boolean triple_present = Execute_ASK_Subquery(sub_query);
                         System.out.println("Triple present in DC: " + triple_present);
                         System.out.println("Back from executing ASK subquery");
                         if(triple_present){
                             //Check DC for the endpoint and also lifting rule.
-                            Query ask_endpoint = QueryFactory.create(ask_endpoint_query);
-                            Query ask_liftingrule = QueryFactory.create(ask_liftingrule_query);
+                            //Query ask_endpoint = QueryFactory.create(ask_endpoint_query);
+                            //Query ask_liftingrule = QueryFactory.create(ask_liftingrule_query);
+                            String endpoint_query = ask_endpoint_query.toString();
+                            Query ask_endpoint = QueryFactory.create(endpoint_query);
+                            System.out.println("## ENDPOINT ASK QUERY: " + ask_endpoint.toString());
+                            String liftingrule_query = ask_liftingrule_query.toString();
+                            Query ask_liftingrule = QueryFactory.create(liftingrule_query);
+                            System.out.println("#LIFTINGRULE ASK QUERY: " + ask_liftingrule.toString());
                             //Check for endpoint if available.
                             QueryExecution q_endpoint = QueryExecutionFactory.create(ask_endpoint, DC_model);
                             boolean Endpoint_result = q_endpoint.execAsk();
@@ -192,11 +212,6 @@ public class Test2_works {
                                     System.out.println("EP URL: "+ ep.getURI());
                                     System.out.println("LR URL: "+ lr.getURI());
                                 }
-                                
-                                //select_statement.append(" SERVICE <").append(ep.toString()).append("> { \n");
-                                //SELECT_Sub_query.insert(0, select_statement);
-                                //SELECT_Sub_query.append("}");
-                                //System.out.println("## FINAL SUB-QUERY FORMED:\n" + SELECT_Sub_query);
                                 try {
                                     Model final_model = ModelFactory.createDefaultModel();
                                     final_model = bind_data(ep, lr);
@@ -266,6 +281,15 @@ public class Test2_works {
             qe_dc.close();
         }
         return(DC_result);
+    }
+    
+    public static void Ex_DataCatalogue(Query input_query){
+        DC_model = ModelFactory.createDefaultModel();
+        DC_model.read(URL_DataCatalogue);
+        //Parsing the input query to get the triples that need to be searched for later
+        GetTriples(input_query);
+        //Parsing the DC to see the triples that can be found + EP URL + LR URL
+        Parse_DC(input_query);
     }
     
     public static void main(String[] args) {

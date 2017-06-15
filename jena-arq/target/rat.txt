@@ -2,13 +2,13 @@
 *****************************************************
 Summary
 -------
-Generated at: 2017-06-12T12:57:49+02:00
+Generated at: 2017-06-13T16:38:57+02:00
 Notes: 4
 Binaries: 0
 Archives: 0
-Standards: 1813
+Standards: 1814
 
-Apache Licensed: 1759
+Apache Licensed: 1760
 Generated Documents: 0
 
 JavaDocs are generated and so license header is optional
@@ -72,6 +72,7 @@ Archives:
   W3C   ResultSets/xml-to-html.xsl
   AL    src/main/java/arq/SPARQL_LD_QueryExamples.java
   AL    src/main/java/arq/Test.java
+  AL    src/main/java/arq/Test2.java
   AL    src/main/java/arq/Test2_works.java
   AL    src/main/java/org/apache/jena/atlas/csv/CSVParseException.java
   AL    src/main/java/org/apache/jena/atlas/csv/CSVParser.java

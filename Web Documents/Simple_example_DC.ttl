@@ -1,0 +1,29 @@
+@prefix seas: <https://w3id.org/seas/> .
+@prefix sosa: <http://www.w3c.org/ns/sosa/> .
+@prefix ssn: <http://www.w3c.org/ns/ssn/> .
+@prefix ex: <http://example.org/data/> .
+@prefix ns: <http://purl.org/acco/ns#> .
+
+<room/2> a seas:Room , sosa:FeatureOfInterest ;
+  ssn:hasProperty seas:TemperatureProperty , seas:OccupancyProperty ;
+  seas:onFloor 2 .
+
+<room/2#temperature> a sosa:ObservableProperty , seas:TemperatureProperty ;
+sosa:observedProperty <temperature2> .
+
+<temperature2> a sosa:Observation ;
+  sosa:hasFeatureOfInterest <room/2> ;
+  sosa:observedProperty seas:temperature ;
+  sosa:hasSimpleResult <temp_value> ;
+  ex:endpoint <http://localhost:8001/endpoint_TempSensor1.json> ;
+  ex:liftingrule <http://localhost:8001/liftingrule_TempSensor.rqg> .
+
+ <room/2#occupancy> a sosa:ObservableProperty , seas:OccupancyProperty ;
+ sosa:observedProperty <occupancy2> .
+
+ <occupancy2> a sosa:Observation ;
+     sosa:hasFeatureOfInterest <room/2> ;
+     sosa:observedProperty ns:Occupancy ;
+     sosa:hasSimpleResult <occ_value> ;
+     ex:endpoint <http://localhost:8001/endpoint_OccSensor1.json> ;
+     ex:liftingrule <http://localhost:8001/liftingrule_OccSensor.rqg> .

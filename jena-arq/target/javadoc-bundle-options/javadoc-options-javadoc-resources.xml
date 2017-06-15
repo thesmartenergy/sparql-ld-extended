@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javadocOptions>
+  <groups>
+    <group>
+      <title>SPARQL Query and Update</title>
+      <packages>org.apache.jena.query:org.apache.jena.update</packages>
+    </group>
+    <group>
+      <title>RIOT</title>
+      <packages>org.apache.jena.riot</packages>
+    </group>
+  </groups>
+  <docletArtifacts>
+    <docletArtifact />
+  </docletArtifacts>
+  <tagletArtifacts>
+    <tagletArtifact />
+  </tagletArtifacts>
+  <links>
+    <link>http://jena.apache.org/documentation/javadoc/jena/</link>
+    <link>http://jena.apache.org/documentation/javadoc/arq/</link>
+    <link>http://jena.apache.org/documentation/javadoc/tdb/</link>
+    <link>http://jena.apache.org/documentation/javadoc/text/</link>
+    <link>http://jena.apache.org/documentation/javadoc/spatial/</link>
+    <link>http://jena.apache.org/documentation/javadoc/fuseki2/</link>
+    <link>http://jena.apache.org/documentation/javadoc/permissions/</link>
+    <link>http://jena.apache.org/documentation/javadoc/jdbc/</link>
+    <link>http://jena.apache.org/documentation/javadoc/elephas/</link>
+  </links>
+  <excludePackageNames>
+    <excludePackageName>arq</excludePackageName>
+    <excludePackageName>arq.*</excludePackageName>
+    <excludePackageName>riotcmd</excludePackageName>
+    <excludePackageName>riotcmd.*</excludePackageName>
+  </excludePackageNames>
+  <javadocResourcesDirectory>src/main/javadoc</javadocResourcesDirectory>
+</javadocOptions>

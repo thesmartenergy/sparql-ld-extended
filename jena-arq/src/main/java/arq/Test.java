@@ -29,7 +29,7 @@ import org.apache.jena.rdf.model.ModelFactory;
  */
 public class Test {
     private static String QUERY_TO_RUN; // The query to run
-
+    private static String URL_DataCatalogue = "";
     /**
      * @param args the command line arguments
      */
@@ -97,17 +97,41 @@ public class Test {
         QUERY_rdfa_derefUri_endpoint.append("    ?p2 <http://swrc.ontoware.org/ontology#series> ?series } ");
         QUERY_rdfa_derefUri_endpoint.append("} GROUP BY ?authorName ORDER BY DESC(?numOfPapers)");
 
+        //Query 6 (Extended SPARQL-LD)
+        StringBuilder QUERY_getDataCatalog = new StringBuilder();
+        QUERY_getDataCatalog.append("PREFIX seas: <https://w3id.org/seas/> ");
+        QUERY_getDataCatalog.append("PREFIX sosa: <http://www.w3c.org/ns/sosa/> ");
+        QUERY_getDataCatalog.append("PREFIX ssn: <http://www.w3c.org/ns/ssn/> ");
+        QUERY_getDataCatalog.append("SELECT ?temp_value ?occ_value WHERE { ");
+        QUERY_getDataCatalog.append("  SERVICE <http://localhost:8001/data_catalouge.ttl> { ");
+        QUERY_getDataCatalog.append("  ?room a seas:Room , sosa:FeatureOfInterest ; ");
+        QUERY_getDataCatalog.append("    ssn:hasProperty ?temperature , ?occupancy ; ");
+        QUERY_getDataCatalog.append("    seas:onFloor ?floor .");
+        QUERY_getDataCatalog.append("  ?temperature sosa:hasSimpleResult ?temp_value .");
+        QUERY_getDataCatalog.append("  ?occupancy sosa:hasSimpleResult ?occ_value .");
+        QUERY_getDataCatalog.append("  FILTER( ?floor = 2 ");
+        QUERY_getDataCatalog.append("    && ?temp_value > 14 ");
+        QUERY_getDataCatalog.append("    && ?occ_value = 0 ) }");
+        QUERY_getDataCatalog.append("} ");
+        
         // Running query 2
         // SET HERE THE QUERY TO RUN 
-        QUERY_TO_RUN = QUERY_getRDFa.toString();
+        QUERY_TO_RUN = QUERY_getDataCatalog.toString();
+        URL_DataCatalogue = "http://localhost:8001/DC_TestExample.ttl";
         // Create a Query object
         Query query = QueryFactory.create(QUERY_TO_RUN);
-        // Execute the query and obtain results
-        QueryExecution qe = QueryExecutionFactory.create(query, model);
-        ResultSet results = qe.execSelect();
-        // Output query results	
-        ResultSetFormatter.out(System.out, results, query);
-        // Free up resources used running the query
-        qe.close();
+        
+        if(URL_DataCatalogue != null && !URL_DataCatalogue.isEmpty()){
+            Test2_works.Ex_DataCatalogue(query);
+        }
+        else{
+            // Execute the query and obtain results
+            QueryExecution qe = QueryExecutionFactory.create(query, model);
+            ResultSet results = qe.execSelect();
+            // Output query results	
+            ResultSetFormatter.out(System.out, results, query);
+            // Free up resources used running the query
+            qe.close();
+        }
     }    
 }
