@@ -121,7 +121,6 @@ public class SPARQL_LD_QueryExamples {
             System.out.println("Printing result");
             ResultSetFormatter.out(System.out, results, query);
         }
-        // Free up resources used running the query
         qe.close();
     }
 }

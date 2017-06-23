@@ -150,7 +150,7 @@ public class SPARQL_LD_EXTENDEDExample {
             QueryExecution qe = QueryExecutionFactory.create(query, model);
             ResultSet results = qe.execSelect();
 
-            // Output query results	
+            // Output results	
             if(results != null){
                 System.out.println("Printing result");
                 ResultSetFormatter.out(System.out, results, query);
