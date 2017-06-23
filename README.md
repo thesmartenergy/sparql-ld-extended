@@ -88,7 +88,7 @@ by the sensors and the devices to expose their data.
 
 ## Source code
 We have used the original SPARQL-LD project present here: (https://github.com/fafalios/sparql-ld) as mentioned. <br />
-We have however, modified the arq.**SPARQL_LD_EXTENDEDExample** file to include the example mentioned above. <br />
+We have added the arq.**SPARQL_LD_EXTENDEDExample** file to include the example mentioned above for SPARQL-LD Extension. <br />
 For extending SPARQL-LD, we have created the class: com.hp.hpl.jena.sparql.engine.http.**SparqlLDExtended** <br />
 
 We have also upgraded SPARQL-LD to use **Jena ARQ version 3.3.0** from the originally used *Jena ARQ version 2.13.0*.
